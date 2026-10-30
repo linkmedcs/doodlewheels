@@ -1,8 +1,7 @@
 Manifest-Version: 1.0
-Created-By: 1.5.0_10 (Sun Microsystems Inc.)
 
 Name: AndroidManifest.xml
-SHA1-Digest: Xwq4D9A4NCujqJrJXevIYZkbzZ0=
+SHA1-Digest: cEXDGBIcwmgR4qSccNNGSr6lUC8=
 
 Name: CopyrightDeclaration.xml
 SHA1-Digest: MaFZdjpcHemIM86tx5/z2TxDqt0=
@@ -127,11 +126,56 @@ SHA1-Digest: XIqMur3Hxzh5241hCgVbl7XZEIs=
 Name: assets/lvs/v45.dwl
 SHA1-Digest: FnSSmJKhsOZKlT6N9qLxJHQzPbk=
 
+Name: assets/lvs/v46.dwl
+SHA1-Digest: uNedsXKEBAH9DwoeOASxJuXjneg=
+
+Name: assets/lvs/v47.dwl
+SHA1-Digest: H1EoKPywvvZdua8t9xQSDRYav58=
+
+Name: assets/lvs/v48.dwl
+SHA1-Digest: Latex6iAd5JxrGIgRI2FQ2RJDyA=
+
+Name: assets/lvs/v49.dwl
+SHA1-Digest: LGQa+RaJLstTIyAkoK9vp8PStoA=
+
 Name: assets/lvs/v5.dwl
 SHA1-Digest: y+CZKb6r8yGYwkaqtqOhmtHtB+E=
 
+Name: assets/lvs/v50.dwl
+SHA1-Digest: CjQ7n1vK3XkYkfef7iRqZA0zxMw=
+
+Name: assets/lvs/v51.dwl
+SHA1-Digest: uc64+7IpJgCsZcZY/pxjYMXSuQ4=
+
+Name: assets/lvs/v52.dwl
+SHA1-Digest: prV9/xG/nuA0gAoof8PrktIl2l4=
+
+Name: assets/lvs/v53.dwl
+SHA1-Digest: +aOzCJa3e0Hwp9AJMo9ekkn50wE=
+
+Name: assets/lvs/v54.dwl
+SHA1-Digest: 2GGuP94QP354CJwQV49NeQ0+qW8=
+
+Name: assets/lvs/v55.dwl
+SHA1-Digest: O+s3iR1qtuVpWih//tgGh43eAKY=
+
+Name: assets/lvs/v56.dwl
+SHA1-Digest: u2yumYprlLIajSfUibPIQF9ls7A=
+
+Name: assets/lvs/v57.dwl
+SHA1-Digest: EKXzHjYRf2KconPeZms7cIl1bqs=
+
+Name: assets/lvs/v58.dwl
+SHA1-Digest: ofAYgZCMLIUYAMJg71HCMuIetiU=
+
+Name: assets/lvs/v59.dwl
+SHA1-Digest: Ezm7I9WcW1ReC9XJ4bkx7IlJC6I=
+
 Name: assets/lvs/v6.dwl
 SHA1-Digest: WbU/r/3NWHbet9Vgam5jXxl0sTA=
+
+Name: assets/lvs/v60.dwl
+SHA1-Digest: fFPLaiFuIOhrUqG2RrVWmRmatdo=
 
 Name: assets/lvs/v7.dwl
 SHA1-Digest: B+gGP+v9WAbihCB2ChyimJiSuB0=
@@ -314,10 +358,10 @@ Name: assets/res/win.mp3
 SHA1-Digest: WSg6VUh4IkdgF43nzmMXFWfLbFQ=
 
 Name: classes.dex
-SHA1-Digest: bV3D9ocj67GJywCYgttt/Uhl7EE=
+SHA1-Digest: P8i0+deEvcvu4pERbffJlOtuIMM=
 
 Name: lib/armeabi/libgame.so
-SHA1-Digest: dIrcSNtBxfeS/ZALYM+I98LzNic=
+SHA1-Digest: lDEH23K+tFcwD88l3xEKLNgl7y4=
 
 Name: lib/armeabi/libsmsiap.so
 SHA1-Digest: iu3CIKqFf2LT0FunieAKF/Jz6ME=
@@ -325,15 +369,15 @@ SHA1-Digest: iu3CIKqFf2LT0FunieAKF/Jz6ME=
 Name: mmiap.xml
 SHA1-Digest: PjZW3cLA8hzUGw3pKwAGy+fTh4g=
 
-Name: res/drawable-hdpi/icon.png
-SHA1-Digest: kNX/v6vtg1TAUdWPRL3JgoZhli0=
+Name: res/drawable-hdpi-v4/icon.png
+SHA1-Digest: EVJmjsKEem6wLdCmiiESn3/Eq0c=
 
-Name: res/drawable-ldpi/icon.png
+Name: res/drawable-ldpi-v4/icon.png
 SHA1-Digest: DLqW5lzSKJZqc15N9ymRdUxMQ4g=
 
-Name: res/drawable-mdpi/icon.png
-SHA1-Digest: j5R7Ao4VJgE9eYaDutKOrtjnS0A=
+Name: res/drawable-mdpi-v4/icon.png
+SHA1-Digest: lvrS4WH//G/MGPvVf4tBnpN8xcY=
 
 Name: resources.arsc
-SHA1-Digest: pAUHW3FHOsq3mOdOf8XOvk3ao0I=
+SHA1-Digest: 9yKXgckzaKwqVLdeyuRpuQL5vog=
 

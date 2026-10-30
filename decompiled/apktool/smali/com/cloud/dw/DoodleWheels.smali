@@ -18,6 +18,8 @@
 
 .field public mPurchase:Lmm/sms/purchasesdk/SMSPurchase;
 
+.field private startupCover:Landroid/view/View;
+
 
 # direct methods
 .method static constructor <clinit>()V
@@ -63,10 +65,130 @@
     return-object v0
 .end method
 
+.method private applyFullscreen()V
+    .locals 4
+
+    invoke-virtual {p0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
+
+    move-result-object v0
+
+    const/16 v1, 0x400
+
+    invoke-virtual {v0, v1, v1}, Landroid/view/Window;->setFlags(II)V
+
+    sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v2, 0x1c
+
+    if-lt v1, v2, :cond_1
+
+    invoke-virtual {v0}, Landroid/view/Window;->getAttributes()Landroid/view/WindowManager$LayoutParams;
+
+    move-result-object v2
+
+    sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v3, 0x1e
+
+    if-lt v1, v3, :cond_0
+
+    const/4 v3, 0x3
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v3, 0x1
+
+    :goto_0
+    iget v1, v2, Landroid/view/WindowManager$LayoutParams;->layoutInDisplayCutoutMode:I
+
+    if-eq v1, v3, :cond_1
+
+    iput v3, v2, Landroid/view/WindowManager$LayoutParams;->layoutInDisplayCutoutMode:I
+
+    invoke-virtual {v0, v2}, Landroid/view/Window;->setAttributes(Landroid/view/WindowManager$LayoutParams;)V
+
+    :cond_1
+    sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v2, 0x10
+
+    if-lt v1, v2, :cond_3
+
+    const/16 v2, 0x704
+
+    const/16 v3, 0x13
+
+    if-lt v1, v3, :cond_2
+
+    const/16 v2, 0x1706
+
+    :cond_2
+    invoke-virtual {v0}, Landroid/view/Window;->getDecorView()Landroid/view/View;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v2}, Landroid/view/View;->setSystemUiVisibility(I)V
+
+    :cond_3
+    return-void
+.end method
+
+.method private installStartupCover()V
+    .locals 3
+
+    new-instance v0, Landroid/view/View;
+
+    invoke-direct {v0, p0}, Landroid/view/View;-><init>(Landroid/content/Context;)V
+
+    const/high16 v1, -0x1000000
+
+    invoke-virtual {v0, v1}, Landroid/view/View;->setBackgroundColor(I)V
+
+    const/4 v1, 0x1
+
+    invoke-virtual {v0, v1}, Landroid/view/View;->setClickable(Z)V
+
+    iput-object v0, p0, Lcom/cloud/dw/DoodleWheels;->startupCover:Landroid/view/View;
+
+    new-instance v1, Landroid/view/ViewGroup$LayoutParams;
+
+    const/4 v2, -0x1
+
+    invoke-direct {v1, v2, v2}, Landroid/view/ViewGroup$LayoutParams;-><init>(II)V
+
+    invoke-virtual {p0, v0, v1}, Landroid/app/Activity;->addContentView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
+
+    return-void
+.end method
+
 .method private native nativeOnDestroy()V
 .end method
 
 .method private native nativeOnStart()V
+.end method
+
+.method public static onFirstFrameReady()V
+    .locals 2
+
+    invoke-static {}, Lorg/cocos2dx/lib/Cocos2dxActivity;->getContext()Landroid/content/Context;
+
+    move-result-object v0
+
+    instance-of v1, v0, Lcom/cloud/dw/DoodleWheels;
+
+    if-eqz v1, :cond_0
+
+    check-cast v0, Lcom/cloud/dw/DoodleWheels;
+
+    new-instance v1, Lcom/cloud/dw/StartupCoverDismiss;
+
+    invoke-direct {v1, v0}, Lcom/cloud/dw/StartupCoverDismiss;-><init>(Lcom/cloud/dw/DoodleWheels;)V
+
+    invoke-virtual {v0, v1}, Landroid/app/Activity;->runOnUiThread(Ljava/lang/Runnable;)V
+
+    :cond_0
+    return-void
 .end method
 
 .method private showProgressDialog()V
@@ -148,86 +270,81 @@
     return-void
 .end method
 
+.method public dismissStartupCover()V
+    .locals 4
+
+    iget-object v0, p0, Lcom/cloud/dw/DoodleWheels;->startupCover:Landroid/view/View;
+
+    if-eqz v0, :cond_1
+
+    const/4 v1, 0x0
+
+    iput-object v1, p0, Lcom/cloud/dw/DoodleWheels;->startupCover:Landroid/view/View;
+
+    sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v2, 0xe
+
+    if-lt v1, v2, :cond_0
+
+    invoke-virtual {v0}, Landroid/view/View;->animate()Landroid/view/ViewPropertyAnimator;
+
+    move-result-object v1
+
+    const/4 v2, 0x0
+
+    invoke-virtual {v1, v2}, Landroid/view/ViewPropertyAnimator;->alpha(F)Landroid/view/ViewPropertyAnimator;
+
+    const-wide/16 v2, 0x78
+
+    invoke-virtual {v1, v2, v3}, Landroid/view/ViewPropertyAnimator;->setDuration(J)Landroid/view/ViewPropertyAnimator;
+
+    invoke-virtual {v1}, Landroid/view/ViewPropertyAnimator;->start()V
+
+    new-instance v1, Lcom/cloud/dw/StartupCoverRemove;
+
+    invoke-direct {v1, v0}, Lcom/cloud/dw/StartupCoverRemove;-><init>(Landroid/view/View;)V
+
+    const-wide/16 v2, 0x96
+
+    invoke-virtual {v0, v1, v2, v3}, Landroid/view/View;->postDelayed(Ljava/lang/Runnable;J)Z
+
+    goto :goto_0
+
+    :cond_0
+    new-instance v1, Lcom/cloud/dw/StartupCoverRemove;
+
+    invoke-direct {v1, v0}, Lcom/cloud/dw/StartupCoverRemove;-><init>(Landroid/view/View;)V
+
+    invoke-interface {v1}, Ljava/lang/Runnable;->run()V
+
+    :cond_1
+    :goto_0
+    return-void
+.end method
+
 .method public doBilling()V
-    .locals 1
+    .locals 0
 
-    .prologue
-    .line 97
-    new-instance v0, Lcom/cloud/dw/DoodleWheels$1;
+    invoke-virtual {p0}, Lcom/cloud/dw/DoodleWheels;->setActivated()V
 
-    invoke-direct {v0, p0}, Lcom/cloud/dw/DoodleWheels$1;-><init>(Lcom/cloud/dw/DoodleWheels;)V
-
-    invoke-virtual {p0, v0}, Lcom/cloud/dw/DoodleWheels;->runOnUiThread(Ljava/lang/Runnable;)V
-
-    .line 109
     return-void
 .end method
 
 .method protected onCreate(Landroid/os/Bundle;)V
-    .locals 5
-    .param p1, "savedInstanceState"    # Landroid/os/Bundle;
+    .locals 1
 
-    .prologue
-    .line 48
+    invoke-direct {p0}, Lcom/cloud/dw/DoodleWheels;->applyFullscreen()V
+
     invoke-super {p0, p1}, Lorg/cocos2dx/lib/Cocos2dxActivity;->onCreate(Landroid/os/Bundle;)V
 
-    .line 50
-    const/4 v2, 0x3
+    invoke-direct {p0}, Lcom/cloud/dw/DoodleWheels;->installStartupCover()V
 
-    invoke-virtual {p0, v2}, Lcom/cloud/dw/DoodleWheels;->setVolumeControlStream(I)V
+    const/4 v0, 0x3
 
-    .line 52
-    new-instance v1, Lcom/cloud/dw/IAPHandler;
+    invoke-virtual {p0, v0}, Lcom/cloud/dw/DoodleWheels;->setVolumeControlStream(I)V
 
-    invoke-direct {v1, p0}, Lcom/cloud/dw/IAPHandler;-><init>(Landroid/app/Activity;)V
-
-    .line 53
-    .local v1, "iapHandler":Lcom/cloud/dw/IAPHandler;
-    new-instance v2, Lcom/cloud/dw/IAPListener;
-
-    invoke-direct {v2, p0, v1}, Lcom/cloud/dw/IAPListener;-><init>(Landroid/content/Context;Lcom/cloud/dw/IAPHandler;)V
-
-    iput-object v2, p0, Lcom/cloud/dw/DoodleWheels;->mListener:Lcom/cloud/dw/IAPListener;
-
-    .line 54
-    invoke-static {}, Lmm/sms/purchasesdk/SMSPurchase;->getInstance()Lmm/sms/purchasesdk/SMSPurchase;
-
-    move-result-object v2
-
-    iput-object v2, p0, Lcom/cloud/dw/DoodleWheels;->mPurchase:Lmm/sms/purchasesdk/SMSPurchase;
-
-    .line 56
-    :try_start_0
-    iget-object v2, p0, Lcom/cloud/dw/DoodleWheels;->mPurchase:Lmm/sms/purchasesdk/SMSPurchase;
-
-    const-string v3, "300002826861"
-
-    const-string v4, "E7A3C05453C9C090"
-
-    invoke-virtual {v2, v3, v4}, Lmm/sms/purchasesdk/SMSPurchase;->setAppInfo(Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 57
-    iget-object v2, p0, Lcom/cloud/dw/DoodleWheels;->mPurchase:Lmm/sms/purchasesdk/SMSPurchase;
-
-    iget-object v3, p0, Lcom/cloud/dw/DoodleWheels;->mListener:Lcom/cloud/dw/IAPListener;
-
-    invoke-virtual {v2, p0, v3}, Lmm/sms/purchasesdk/SMSPurchase;->smsInit(Landroid/content/Context;Lmm/sms/purchasesdk/OnSMSPurchaseListener;)V
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
-
-    .line 61
-    :goto_0
     return-void
-
-    .line 58
-    :catch_0
-    move-exception v0
-
-    .line 59
-    .local v0, "e1":Ljava/lang/Exception;
-    invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
-
-    goto :goto_0
 .end method
 
 .method protected onDestroy()V
@@ -244,6 +361,16 @@
     return-void
 .end method
 
+.method protected onResume()V
+    .locals 0
+
+    invoke-direct {p0}, Lcom/cloud/dw/DoodleWheels;->applyFullscreen()V
+
+    invoke-super {p0}, Lorg/cocos2dx/lib/Cocos2dxActivity;->onResume()V
+
+    return-void
+.end method
+
 .method protected onStart()V
     .locals 0
 
@@ -254,7 +381,22 @@
     .line 66
     invoke-direct {p0}, Lcom/cloud/dw/DoodleWheels;->nativeOnStart()V
 
+    invoke-virtual {p0}, Lcom/cloud/dw/DoodleWheels;->setActivated()V
+
     .line 67
+    return-void
+.end method
+
+.method public onWindowFocusChanged(Z)V
+    .locals 0
+
+    invoke-super {p0, p1}, Lorg/cocos2dx/lib/Cocos2dxActivity;->onWindowFocusChanged(Z)V
+
+    if-eqz p1, :cond_0
+
+    invoke-direct {p0}, Lcom/cloud/dw/DoodleWheels;->applyFullscreen()V
+
+    :cond_0
     return-void
 .end method
 

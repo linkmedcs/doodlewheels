@@ -1,10 +1,10 @@
 Signature-Version: 1.0
-Created-By: NP
-SHA1-Digest-Manifest: rjlyB2gGS6qOST498kOw6X0hi9E=
-X-Android-APK-Signed: 2
+Created-By: 1.0 (Android)
+SHA1-Digest-Manifest: SJcRTW+QgmVgtHxTux3KnrXRp+o=
+X-Android-APK-Signed: 2, 3
 
 Name: AndroidManifest.xml
-SHA1-Digest: EKXQvNT6xyHifRw4hg9PgyvfpB4=
+SHA1-Digest: dW0HSOIJWV6wjSjouRqtHQ7lWrU=
 
 Name: CopyrightDeclaration.xml
 SHA1-Digest: SrIFG1c77cpnoQomLEBn21+K/Kk=
@@ -129,11 +129,56 @@ SHA1-Digest: n1EtFjh34/z1utMSDK8pRtOo+js=
 Name: assets/lvs/v45.dwl
 SHA1-Digest: QkTBaYM0zQv8e09a0vpdYOUP888=
 
+Name: assets/lvs/v46.dwl
+SHA1-Digest: JQTaW2ZmddQiwp+BY4YwlaO2tKg=
+
+Name: assets/lvs/v47.dwl
+SHA1-Digest: 4f8TE/eBMaaZ+PZpy60C4FD7E9o=
+
+Name: assets/lvs/v48.dwl
+SHA1-Digest: tNSCH07dGgBmXkK8EOEQ5JzIT0s=
+
+Name: assets/lvs/v49.dwl
+SHA1-Digest: E+MLF5fL5953X3LBDhlVSXChqUc=
+
 Name: assets/lvs/v5.dwl
 SHA1-Digest: 9A/iaMrZtyawA2VaI5f4gp6TEO0=
 
+Name: assets/lvs/v50.dwl
+SHA1-Digest: HRUy081kjy5NQAJZaLFEss0w6JY=
+
+Name: assets/lvs/v51.dwl
+SHA1-Digest: /vjEiWHcxvtlj3mUQGFEdc3HoC4=
+
+Name: assets/lvs/v52.dwl
+SHA1-Digest: GxGFTaOO4Fx7P5xYkFBgs6op704=
+
+Name: assets/lvs/v53.dwl
+SHA1-Digest: xmUFUH2+RRsR+/i+83JsAK/sBik=
+
+Name: assets/lvs/v54.dwl
+SHA1-Digest: PdLyuqHzLgaSOWYO5Hi0vNVacA8=
+
+Name: assets/lvs/v55.dwl
+SHA1-Digest: 5DRQkygwkRcCCWjUE9wv8I2WEbU=
+
+Name: assets/lvs/v56.dwl
+SHA1-Digest: aLkM98G5EggFtamW8UUqOw2nOJ8=
+
+Name: assets/lvs/v57.dwl
+SHA1-Digest: dCG1Dy3AI/E4Y0VUyJilsMEMRow=
+
+Name: assets/lvs/v58.dwl
+SHA1-Digest: ++5ssCiZNcw03zwUAr5100986mQ=
+
+Name: assets/lvs/v59.dwl
+SHA1-Digest: EW9s7iOFXoajw7Nvm8BFUR8e5mg=
+
 Name: assets/lvs/v6.dwl
 SHA1-Digest: gp9tIH+X1Vsu497Zrnolfts2Y94=
+
+Name: assets/lvs/v60.dwl
+SHA1-Digest: 4sFNrO/Iio9iDJC/8VgsTzjDAPk=
 
 Name: assets/lvs/v7.dwl
 SHA1-Digest: sChojZvWFkB15iHA5jLEHTehx+U=
@@ -316,10 +361,10 @@ Name: assets/res/win.mp3
 SHA1-Digest: kN/ATkoUFJSY+TEtbvNglePugAg=
 
 Name: classes.dex
-SHA1-Digest: 5sg+VB3+o0DbAf3lbOCpaB+uN3c=
+SHA1-Digest: 6F7dl/Fq+MaObVPf+lEFfrVH1jQ=
 
 Name: lib/armeabi/libgame.so
-SHA1-Digest: gzUEUyOHbCbAIPY1shcoL60smSM=
+SHA1-Digest: bQ7hC7nlaxNV+kg3cITz8AB0TQA=
 
 Name: lib/armeabi/libsmsiap.so
 SHA1-Digest: L7eEV/1FElNcHwFhIRJid+w/WL4=
@@ -327,15 +372,15 @@ SHA1-Digest: L7eEV/1FElNcHwFhIRJid+w/WL4=
 Name: mmiap.xml
 SHA1-Digest: jq1/UaRW1e3RsiEeZGLgEPO62yI=
 
-Name: res/drawable-hdpi/icon.png
-SHA1-Digest: 1zIsUoIp4LOux5OgEhYZadr391k=
+Name: res/drawable-hdpi-v4/icon.png
+SHA1-Digest: MJGJHeRyBOMretOaqTSRg7UkWMQ=
 
-Name: res/drawable-ldpi/icon.png
-SHA1-Digest: I3llkUsi9l2CEcU807XOOJKfMiQ=
+Name: res/drawable-ldpi-v4/icon.png
+SHA1-Digest: h/AykDlgTMbU/i8Mz2kWdwXbNnM=
 
-Name: res/drawable-mdpi/icon.png
-SHA1-Digest: qTOSaz7Yc4qK1j4WyYO2ZZ5a3QQ=
+Name: res/drawable-mdpi-v4/icon.png
+SHA1-Digest: rNwffeaKkpdLRpdyH3EqdtkG9Mw=
 
 Name: resources.arsc
-SHA1-Digest: dTAepfhOdLcjAkeJfhsCEERDLVs=
+SHA1-Digest: DZ2SSUFz/QIRNtd4G5He36VusWc=
 

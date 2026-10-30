@@ -21,6 +21,8 @@
 
 .field private mScreenWidth:I
 
+.field private startupFrames:I
+
 
 # direct methods
 .method static constructor <clinit>()V
@@ -228,14 +230,27 @@
 .end method
 
 .method public onDrawFrame(Ljavax/microedition/khronos/opengles/GL10;)V
-    .locals 0
+    .locals 1
     .param p1, "gl"    # Ljavax/microedition/khronos/opengles/GL10;
 
     .prologue
     .line 94
     invoke-static {}, Lorg/cocos2dx/lib/Cocos2dxRenderer;->nativeRender()V
 
+    iget v0, p0, Lorg/cocos2dx/lib/Cocos2dxRenderer;->startupFrames:I
+
+    if-lez v0, :cond_0
+
+    add-int/lit8 v0, v0, -0x1
+
+    iput v0, p0, Lorg/cocos2dx/lib/Cocos2dxRenderer;->startupFrames:I
+
+    if-nez v0, :cond_0
+
+    invoke-static {}, Lcom/cloud/dw/DoodleWheels;->onFirstFrameReady()V
+
     .line 108
+    :cond_0
     return-void
 .end method
 
@@ -257,6 +272,10 @@
 
     .prologue
     .line 72
+    const/4 v0, 0x2
+
+    iput v0, p0, Lorg/cocos2dx/lib/Cocos2dxRenderer;->startupFrames:I
+
     iget v0, p0, Lorg/cocos2dx/lib/Cocos2dxRenderer;->mScreenWidth:I
 
     iget v1, p0, Lorg/cocos2dx/lib/Cocos2dxRenderer;->mScreenHeight:I
