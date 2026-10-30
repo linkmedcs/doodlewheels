@@ -6,6 +6,7 @@
 - [付费与关卡限制定位](decompiled/PAYMENT_ANALYSIS.md)
 - [Java 主入口](decompiled/jadx/sources/com/cloud/dw/DoodleWheels.java)
 - [购买结果判断](decompiled/jadx/sources/com/cloud/dw/IAPListener.java)
+- [电脑端关卡实验室：全部 60 关预览与近似试玩](tools/level_lab/README.md)
 
 恢复来源 APK 的 SHA-256 为 `c6ca9b37e9c522787c6564f32a1b2fca94f7e7670fd571563a25bcab59b37f52`。已重新构建并验证签名和对齐；代码、素材、60 个关卡及原生库与来源包逐字节一致，资源表经重新编译后解码内容一致，尚未真机验证。APK 不包含此前用于生成地图的 Python 脚本，这些开发脚本未恢复。
 

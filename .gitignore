@@ -3,3 +3,4 @@
 /.local-signing/
 decompiled/apktool/build/
 decompiled/apktool/dist/
+__pycache__/
