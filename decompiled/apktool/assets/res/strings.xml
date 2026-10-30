@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<strings>
+    <s1 zh="开始游戏" ko="게임시작" ja="ゲームスタート" en="Start"/>
+    <s2 zh="排行榜" ko="랭킹" ja="ランキング" en="Highscores"/>
+       <s3 zh="游戏社区" ko="커뮤니티" ja="ゲームコミュニティ" en="SNS"/>
+        <s4 zh="重试" ko="재도전" ja="リトライ" en="Retry"/>
+        <s5 zh="菜单" ko="메뉴" ja="メニュー" en="Menu"/>
+        <s6 zh="帮助" ko="도움말" ja="ヘルプ" en="Help"/>
+        <s7 zh="下一关" ko="다음 라운드" ja="次のステージ" en="Next Level"/>
+        <s8 zh="确定要退出游戏吗?" ko="게임을 종료하시겠습니까?" ja="ゲームを終了しますか？" en="Are you sure to exit?"/>
+        <s9 zh="确定" ko="확인" ja="はい" en="OK"/>
+        <s10 zh="取消" ko="취소" ja="いいえ" en="Cancel"/>
+        <s11 zh="选择关卡" ko="라운드 선택" ja="ステージ選択" en="Pick a level"/>
+        <s12 zh="本关最佳成绩" ko="해당 라운드의 최고점수" ja="このステージのハイスコア" en="PERSONAL BEST"/>
+        <s13 zh="消耗时间: %2.1f" ko="소모시간: %2.1f" ja="クリア時間: %2.1f" en="TIME: %2.1f"/>
+        <s14 zh="得分: %d" ko="점수: %d" ja="スコア: %d" en="SCORE: %d"/>
+        <s15 zh="过关!比最佳成绩慢了%2.1f秒" ko="라운드 클리어! 최고점수보다 %2.1f초 늦습니다." ja="ステージクリア！ハイスコアより%2.1f秒遅いです。" en="FINISH %2.1f SECONDS FASTER FOR\nBONUS POINTS"/>
+        <s16 zh="新记录!比上个最佳成绩还快%2.1f秒" ko="신기록 달성! 최고점수보다 %2.1f초 빠릅니다." ja="新記録達成！%2.1f秒更新しました。" en="GREAT! %2.1f SECONDS FASTER\nTHAN YOUR PREVIOUS BEST"/>
+        <s17 zh="真棒！ 你创造了一个新的记录！" ko="훌륭하군요! 신기록을 달성하셨습니다!" ja="素晴らしい！新記録達成！" en="AMAZING! YOU SET A NEW BEST TIME"/>
+        <s18 zh="按住屏幕左边或者右边来控制小车的方向" ko="화면의 왼쪽 또는 오른쪽을 터치해 수레의 방향을 컨트롤하세요." ja="画面の左側または右側をタッチして、車をコントロールしてください。" en="Control the direction of the vehicle by pressing on the left or right side of the screen"/>
+        <s19 zh="推动小球去撞击黄色的星星" ko="공을 움직여 노란색 별을 맞추세요." ja="ボールが☆にふれるとステージクリアです。" en="Push the ball to hit the yellow star"/>
+        <s20 zh="不是所有的道路都如此平坦" ko="모든 길이 다 이렇게 평탄하지는 않습니다." ja="全ての道が平坦という訳ではありません。" en="Not all roads are so flat"/>
+        <s21 zh="别冲太快了!" ko="너무 서두르지 마세요!" ja="猛スピードで走らないでください。" en="Don't dash too fast!"/>
+        <s22 zh="加速冲上来" ko="속도내기" ja="スピードを上げる" en="Dash up acceleratedly"/>
+        <s23 zh="慢一点" ko="천천히~" ja="ゆっくり～" en="Keep a little slow"/>
+        <s24 zh="下楼梯" ko="계단 내려가기" ja="階段を下りる。" en="Get downstairs"/>
+        <s25 zh="这是什么? 撞一下试试" ko="이건 뭘까요? 맞춰보세요." ja="動かせる壁もあります。利用してみましょう。" en="What's that? Hit it for a try"/>
+        <s26 zh="红色的物体弹性很强" ko="빨간색 물체는 탄성이 강합니다." ja="赤いものは弾力がとても強いです。" en="Red items have strong elasticity"/>
+        <s27 zh="一个障碍物" ko="장애물 1개" ja="障害物" en="An obstacle"/>
+        <s28 zh="坐电梯" ko="엘리베이터 타기" ja="エレベーターに乗る。" en="Take the elevator"/>
+        <s29 zh="一个开关" ko="스위치 1개" ja="スイッチを押すと何かが起きます。" en="A switch"/>
+        <s30 zh="接住我" ko="저를 잡으세요." ja="ボールをキャッチしてください。" en="Catch me"/>
+        <s31 zh="加速" ko="가속" ja="加速！" en="Accelerate"/>
+        <s32 zh="剩余关卡乐趣多多, 只需2元即可解锁全部关卡" ko="장애물에게 재미를 많이 남은 단 2 위안 모든 수준의 잠금을 해제하는 방법" ja="ただ2元、すべてのレベルのロックを解除するには、ハードルに多くの楽しみを残り" en="$2 to unlock all fun levels!"/>
+</strings>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">涂鸦双轮车</string>
+    <string name="purchase_ok">激活成功</string>
+    <string name="purchase_fail">激活失败</string>
+</resources>

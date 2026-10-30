@@ -1,0 +1,17 @@
+version: 3.0.3
+apkFileName: doodlebike_crack_1.0.apk
+usesFramework:
+  ids:
+  - 1
+sdkInfo:
+  minSdkVersion: 8
+versionInfo:
+  versionCode: 1
+  versionName: 1.0
+resourcesInfo:
+  packageId: 127
+doNotCompress:
+- arsc
+- jpg
+- mp3
+- png

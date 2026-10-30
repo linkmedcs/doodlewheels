@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">DoodleWheels</string>
+    <string name="purchase_ok">Purchase Successfully</string>
+    <string name="purchase_fail">Purchase Failed</string>
+</resources>

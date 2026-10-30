@@ -1,0 +1,339 @@
+Manifest-Version: 1.0
+Created-By: 1.5.0_10 (Sun Microsystems Inc.)
+
+Name: AndroidManifest.xml
+SHA1-Digest: Xwq4D9A4NCujqJrJXevIYZkbzZ0=
+
+Name: CopyrightDeclaration.xml
+SHA1-Digest: MaFZdjpcHemIM86tx5/z2TxDqt0=
+
+Name: assets/lvs/v1.dwl
+SHA1-Digest: ntddSXRNIEOHh/IyfMM0GNIP3P0=
+
+Name: assets/lvs/v10.dwl
+SHA1-Digest: 0Er5fgvoDKvP+NHXqnIKGdYa4/A=
+
+Name: assets/lvs/v11.dwl
+SHA1-Digest: gPPIBzF+83vgrsH4AZjQgAt5qyc=
+
+Name: assets/lvs/v12.dwl
+SHA1-Digest: SSfvGVCGDq1ZnytPw46wxSW6SQg=
+
+Name: assets/lvs/v13.dwl
+SHA1-Digest: lvf1JAmulAL5Cb0FwdzcYZByHnc=
+
+Name: assets/lvs/v14.dwl
+SHA1-Digest: sCv4rXjmjzpgcgoNZLA2c8a/WgU=
+
+Name: assets/lvs/v15.dwl
+SHA1-Digest: uqkpsu2ba3oGMWlZGXFelKFDKO8=
+
+Name: assets/lvs/v16.dwl
+SHA1-Digest: C6t0xwYHflmWDGEkjZw0I+XQ9cg=
+
+Name: assets/lvs/v17.dwl
+SHA1-Digest: utE63QvVwXtl32JvCXz+qS4t+Vk=
+
+Name: assets/lvs/v18.dwl
+SHA1-Digest: cKoYibi+8Syb3928qCKhemlLHyM=
+
+Name: assets/lvs/v19.dwl
+SHA1-Digest: 3gKWGPuAV1OV/5EIiVWO027blLs=
+
+Name: assets/lvs/v2.dwl
+SHA1-Digest: tkvJCF1CLrQklKEt8f7aOrU1YZQ=
+
+Name: assets/lvs/v20.dwl
+SHA1-Digest: 1IoKIewAvsnQpRbfZlXjhF3Lwog=
+
+Name: assets/lvs/v21.dwl
+SHA1-Digest: R/7OfXFIDsdewqRIjV5qyQMq2oo=
+
+Name: assets/lvs/v22.dwl
+SHA1-Digest: mLCOC8AxnvWhp/5Bc6KfXHyL97k=
+
+Name: assets/lvs/v23.dwl
+SHA1-Digest: Go9krqLK9gqcQfPfJGj5oQUUm+k=
+
+Name: assets/lvs/v24.dwl
+SHA1-Digest: fPEr+LORuV0K+M9/jlA1Sd+Mp8Q=
+
+Name: assets/lvs/v25.dwl
+SHA1-Digest: TRq9Hy7JPNIboEJZws5fQYo12fQ=
+
+Name: assets/lvs/v26.dwl
+SHA1-Digest: mIredLd3AxpDFpHwCZ1FljfwGpw=
+
+Name: assets/lvs/v27.dwl
+SHA1-Digest: jyQYlz2GwyIoV//IwUl6mEHwgS4=
+
+Name: assets/lvs/v28.dwl
+SHA1-Digest: NRkiAFzgjGyb2ZMkqad0LCwkd44=
+
+Name: assets/lvs/v29.dwl
+SHA1-Digest: 10x8tcf+VpHj4ykenti7Zed+oc4=
+
+Name: assets/lvs/v3.dwl
+SHA1-Digest: jAQPxtna4oHaMHTjxASUrRQviqE=
+
+Name: assets/lvs/v30.dwl
+SHA1-Digest: jaE1Or7vFQvAENeKOcDkpYiE3z0=
+
+Name: assets/lvs/v31.dwl
+SHA1-Digest: cENgmt2MXK4iq0wIyr7nc/sP78s=
+
+Name: assets/lvs/v32.dwl
+SHA1-Digest: 0olCujf19nJ0P/LPpHSgTFrWDRM=
+
+Name: assets/lvs/v33.dwl
+SHA1-Digest: d3wpfbQ6D4QxXxySi3w3OjKYSqg=
+
+Name: assets/lvs/v34.dwl
+SHA1-Digest: 2ItCKuLWD1DyoJTX0yEGI4LkfbE=
+
+Name: assets/lvs/v35.dwl
+SHA1-Digest: NJMFeVMTBLRn8lSmJSch0OrnV3A=
+
+Name: assets/lvs/v36.dwl
+SHA1-Digest: +5K5dLJPhTaqLmJEXxMMkFc1J7Y=
+
+Name: assets/lvs/v37.dwl
+SHA1-Digest: l2rl0/BF6gq0l0E1ct7ZYPcTnCY=
+
+Name: assets/lvs/v38.dwl
+SHA1-Digest: cxuL35+St5pMtMEVrasT4D1nnkA=
+
+Name: assets/lvs/v39.dwl
+SHA1-Digest: cZRe82n55LTPvrKqQ55JdsQaWGM=
+
+Name: assets/lvs/v4.dwl
+SHA1-Digest: MvlW9R79OEGEW6BZZfZ5vAp0qys=
+
+Name: assets/lvs/v40.dwl
+SHA1-Digest: azMV0eQqxtQJPhhweeig3DAPHmY=
+
+Name: assets/lvs/v41.dwl
+SHA1-Digest: YKWTpa63/VI344NaY5NCH0owi/g=
+
+Name: assets/lvs/v42.dwl
+SHA1-Digest: Ty5pL01gta0wX5dr4rDsTgUWmKk=
+
+Name: assets/lvs/v43.dwl
+SHA1-Digest: JXy1Gs3UHbU2aHUculjPwq4yDv0=
+
+Name: assets/lvs/v44.dwl
+SHA1-Digest: XIqMur3Hxzh5241hCgVbl7XZEIs=
+
+Name: assets/lvs/v45.dwl
+SHA1-Digest: FnSSmJKhsOZKlT6N9qLxJHQzPbk=
+
+Name: assets/lvs/v5.dwl
+SHA1-Digest: y+CZKb6r8yGYwkaqtqOhmtHtB+E=
+
+Name: assets/lvs/v6.dwl
+SHA1-Digest: WbU/r/3NWHbet9Vgam5jXxl0sTA=
+
+Name: assets/lvs/v7.dwl
+SHA1-Digest: B+gGP+v9WAbihCB2ChyimJiSuB0=
+
+Name: assets/lvs/v8.dwl
+SHA1-Digest: nMZxScvh4vlXr18c0XUX5TNnWpY=
+
+Name: assets/lvs/v9.dwl
+SHA1-Digest: aasPMMb/tkWxPRsC8HzCn3Itj5g=
+
+Name: assets/mmiap/smsimage/vertical/bg.png
+SHA1-Digest: sm10r5xm5xgIXfeSVVwLtZUDo8A=
+
+Name: assets/mmiap/smsimage/vertical/button1_Confirm.9.png
+SHA1-Digest: 4R7Eld1CWay8DOJmOL2lNUDttNo=
+
+Name: assets/mmiap/smsimage/vertical/button1_Confirm_Press.9.png
+SHA1-Digest: UzrvQws9fuS5mdrnlq5z3WKXU9c=
+
+Name: assets/mmiap/smsimage/vertical/button_back.png
+SHA1-Digest: MAKjtMzOcziMm1qiqs2KBpxc2Bw=
+
+Name: assets/mmiap/smsimage/vertical/button_back_Press.png
+SHA1-Digest: +nggjMaRqQpLGwgEGOo7R7DToGs=
+
+Name: assets/mmiap/smsimage/vertical/button_finishbilling.png
+SHA1-Digest: IubPvq7wECqp0SAmjupM7jQBN3M=
+
+Name: assets/mmiap/smsimage/vertical/button_finishbilling_press.png
+SHA1-Digest: BrVgMjJiAoPYkkTNDAPXpH7n1iQ=
+
+Name: assets/mmiap/smsimage/vertical/editbg.9.png
+SHA1-Digest: 1m0+JuHqbuFodFKZfF8hAMr3DW8=
+
+Name: assets/mmiap/smsimage/vertical/editbg_a.9.png
+SHA1-Digest: QGXMb8LjWODylPkVZ1y373junbM=
+
+Name: assets/mmiap/smsimage/vertical/editbg_b.9.png
+SHA1-Digest: HxXiDkoiG7IiIi+qKwEX75i3YQM=
+
+Name: assets/mmiap/smsimage/vertical/get_verificationcode.9.png
+SHA1-Digest: F93ixYNe+RkZVuToVd3p+g/AKUY=
+
+Name: assets/mmiap/smsimage/vertical/get_verificationcode_press.9.png
+SHA1-Digest: w9wI7hWNoLR+B2e4eP4YkD27SlY=
+
+Name: assets/mmiap/smsimage/vertical/get_verificationcode_press.png
+SHA1-Digest: vHvrkZvgL29Rwm3UX0ki5BCS5rU=
+
+Name: assets/mmiap/smsimage/vertical/icon_chifubao.png
+SHA1-Digest: VuJshThtrF4Rjw//Ctr5pIFx5jg=
+
+Name: assets/mmiap/smsimage/vertical/icon_false.png
+SHA1-Digest: fDEolNO1n1Fw+DKhkGolEMT6BOE=
+
+Name: assets/mmiap/smsimage/vertical/icon_info.png
+SHA1-Digest: Tzxt0fKmD3jerOCKPnUUJCGeoC8=
+
+Name: assets/mmiap/smsimage/vertical/icon_success.png
+SHA1-Digest: loG43GVYgeqRQiI63nV9iCASmVY=
+
+Name: assets/mmiap/smsimage/vertical/infobg.9.png
+SHA1-Digest: FwQrOBt3bKF94Eg5Gg6rZYZNbkA=
+
+Name: assets/mmiap/smsimage/vertical/infoline.png
+SHA1-Digest: RYUCPPwehYMWB3iUCJ9WRAX/dMQ=
+
+Name: assets/mmiap/smsimage/vertical/keyboard_bg.png
+SHA1-Digest: 3Mvk4x4VIjjbqnqwrit50fGt9pU=
+
+Name: assets/mmiap/smsimage/vertical/keyboard_button.png
+SHA1-Digest: CtkhOTa03WkL0Ra8zpjAIpBpBhg=
+
+Name: assets/mmiap/smsimage/vertical/keyboard_button_delete.png
+SHA1-Digest: lBQG2fICgpQKnUWaoBv8e6tpXOI=
+
+Name: assets/mmiap/smsimage/vertical/keyboard_button_delete_press.png
+SHA1-Digest: yv7satnRxZ23IwgQS1qqoJGaamE=
+
+Name: assets/mmiap/smsimage/vertical/keyboard_button_hide.png
+SHA1-Digest: EvSCNXnU8uRq4EiTbNUb0TzJYBA=
+
+Name: assets/mmiap/smsimage/vertical/keyboard_button_hide_press.png
+SHA1-Digest: WAHk880AZV9IqRxg5mi/hvUmwPk=
+
+Name: assets/mmiap/smsimage/vertical/keyboard_button_press.png
+SHA1-Digest: A/LLFAt35jZldVmonRDl3iMsWcY=
+
+Name: assets/mmiap/smsimage/vertical/line.png
+SHA1-Digest: JfevbgnxsUG+NrGALeC/D+Dqr5I=
+
+Name: assets/mmiap/smsimage/vertical/loading.png
+SHA1-Digest: F/+VFVjbI3Rcwj/oEo94pUJqTBA=
+
+Name: assets/mmiap/smsimage/vertical/logo1.png
+SHA1-Digest: 3z8eFSH38qMkw/y0JspPePvo33k=
+
+Name: assets/mmiap/smsimage/vertical/logo2.png
+SHA1-Digest: UUnHt3nTSOA2LRJ/lorreraPaAw=
+
+Name: assets/mmiap/smsimage/vertical/logo3.png
+SHA1-Digest: 19ywvCd0UcaOajY7Acz2bST2Zpg=
+
+Name: assets/mmiap/smsimage/vertical/title1_bg.png
+SHA1-Digest: Mk9uKdROHrMkoWDpgcd7Pm85gfU=
+
+Name: assets/mmiap/smsimage/vertical/title2_bg.png
+SHA1-Digest: at2u0fbDEzTAO0+wRjZwD7WAJJs=
+
+Name: assets/mmiap/smsimage/vertical/title2_bg_shadow.png
+SHA1-Digest: Y/omk4KRRyZBUW20FKAJxCg09pM=
+
+Name: assets/mmiap/smsimage/vertical/top_button_back.png
+SHA1-Digest: V3dNbV6poCc3LJ4bf2p07bAJY5g=
+
+Name: assets/mmiap/smsimage/vertical/top_button_back_press.png
+SHA1-Digest: 2cMHTSEO2PqPanzrOjAWIST2vqI=
+
+Name: assets/mmiap/smsimage/vertical/yanzhengma_bg.png
+SHA1-Digest: +d6hwrsSpRwTOtmco42H1xw30lg=
+
+Name: assets/res/bg0.jpg
+SHA1-Digest: t+xZ/q8kXffJFDN5/TU4xDpdZu0=
+
+Name: assets/res/bg1.jpg
+SHA1-Digest: cxRSp7+3r8IrGK4zaNgrkZ2Btfc=
+
+Name: assets/res/bg2.jpg
+SHA1-Digest: V4Rr4WuNvoh3Tb7ciWpJDpL0Etw=
+
+Name: assets/res/bg3.png
+SHA1-Digest: hAfhoymqFpBF786QBQxJ+F/5UXQ=
+
+Name: assets/res/bgm.mp3
+SHA1-Digest: vWATk53A98ZXUP3KRhToKJEmj00=
+
+Name: assets/res/entity.plist
+SHA1-Digest: Dd8XMpM7qRmvYrYvaoxPiCeuBN0=
+
+Name: assets/res/entity.png
+SHA1-Digest: i8ZUrXXwR0j2o/E6q1g13i5T+Zw=
+
+Name: assets/res/font.fnt
+SHA1-Digest: 88NpvGJGu5Ur8WNKiSiMSFx7AS8=
+
+Name: assets/res/font.png
+SHA1-Digest: vRgjXoPwI4TEp23TKDpcua2MNiA=
+
+Name: assets/res/football.mp3
+SHA1-Digest: FVOA54PFA+rDsTfyNzB4KrSMq5k=
+
+Name: assets/res/levels.plist
+SHA1-Digest: 4tWW8RUXkTGblcdOwUR7Ts52p6k=
+
+Name: assets/res/levels.png
+SHA1-Digest: uqDIdwaFQLRxzxXBbS4LJk8yczw=
+
+Name: assets/res/ptc.plist
+SHA1-Digest: dBbTQCfIRxISO4cVZfKtgSp0RzQ=
+
+Name: assets/res/star_0.png
+SHA1-Digest: 8yYj5HK+uPnyXyXfA147Dc/JKQM=
+
+Name: assets/res/start.plist
+SHA1-Digest: lgF6rgxz6aNb9jVLhLATmgdFfNI=
+
+Name: assets/res/start.png
+SHA1-Digest: 4n3Z6pRNn7URbe67k/Y2gcwKRZY=
+
+Name: assets/res/strings.xml
+SHA1-Digest: J3HnRTFV9somo9SA8T3JcXT6vQk=
+
+Name: assets/res/switchon.mp3
+SHA1-Digest: wr5+LC5axAnksHSsQDEyG0poJy8=
+
+Name: assets/res/transition.mp3
+SHA1-Digest: msl9b9+mHFGL8bleiRGOyegj0+w=
+
+Name: assets/res/win.mp3
+SHA1-Digest: WSg6VUh4IkdgF43nzmMXFWfLbFQ=
+
+Name: classes.dex
+SHA1-Digest: bV3D9ocj67GJywCYgttt/Uhl7EE=
+
+Name: lib/armeabi/libgame.so
+SHA1-Digest: dIrcSNtBxfeS/ZALYM+I98LzNic=
+
+Name: lib/armeabi/libsmsiap.so
+SHA1-Digest: iu3CIKqFf2LT0FunieAKF/Jz6ME=
+
+Name: mmiap.xml
+SHA1-Digest: PjZW3cLA8hzUGw3pKwAGy+fTh4g=
+
+Name: res/drawable-hdpi/icon.png
+SHA1-Digest: kNX/v6vtg1TAUdWPRL3JgoZhli0=
+
+Name: res/drawable-ldpi/icon.png
+SHA1-Digest: DLqW5lzSKJZqc15N9ymRdUxMQ4g=
+
+Name: res/drawable-mdpi/icon.png
+SHA1-Digest: j5R7Ao4VJgE9eYaDutKOrtjnS0A=
+
+Name: resources.arsc
+SHA1-Digest: pAUHW3FHOsq3mOdOf8XOvk3ao0I=
+
