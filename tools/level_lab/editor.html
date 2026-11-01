@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>DoodleBike · 可视化关卡设计</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f2eedf;color:#263c36;font:14px system-ui}button,input,select{font:inherit;color:inherit;border:1px solid #b7c4b4;border-radius:6px;background:#fff;padding:8px}button{cursor:pointer}button:hover{background:#deebdc}button:disabled{opacity:.45;cursor:default}.primary{background:#244f41;color:white}.primary:hover{background:#376a58}a{color:inherit}header{min-height:62px;padding:12px 20px;background:#213f38;color:white;display:flex;align-items:center;gap:16px;flex-wrap:wrap}h1{font-size:19px;margin:0}header small{opacity:.8;color:inherit}header a{margin-left:auto}main{display:grid;grid-template-columns:248px minmax(0,1fr) 230px;height:calc(100dvh - 62px)}aside{padding:16px;overflow:auto}aside:first-child{border-right:1px solid #d1cab9}aside:last-child{border-left:1px solid #d1cab9}h2{font-size:15px;margin:16px 0 9px}p,small{line-height:1.7}small{font-size:12px;color:#6d7466}.row{display:flex;flex-wrap:wrap;gap:6px;margin:9px 0}.row button{flex:1;white-space:nowrap}label{display:block;margin:8px 0}label input:not([type=checkbox]),label select{width:100%;margin-top:4px}#level{width:100%}.pair{display:grid;grid-template-columns:1fr 1fr;gap:8px}.pair input{min-width:0}hr{border:0;border-top:1px solid #d1cab9;margin:18px 0}#view{position:relative;overflow:hidden;min-width:0}canvas{display:block;width:100%;height:100%;touch-action:none;outline-offset:-3px}#hud{position:absolute;top:14px;left:14px;max-width:calc(100% - 28px);background:#fffdf2ed;padding:9px 12px;border-radius:6px;pointer-events:none;line-height:1.6}#drive{position:absolute;bottom:20px;left:20px;display:flex;gap:14px}#drive button{font-size:25px;width:64px;height:52px;touch-action:none;user-select:none}#message,#selection{line-height:1.7;overflow-wrap:anywhere}#error{color:#a53630;overflow-wrap:anywhere}#palette{display:grid;grid-template-columns:1fr 1fr;gap:6px}#palette button{padding:6px}details{margin-top:16px}summary{cursor:pointer;font-weight:600}input[type=checkbox]{vertical-align:middle}[hidden]{display:none!important}#warnings{font-size:12px;color:#92712f}#dirty{font-size:12px}@media(max-width:1000px){main{grid-template-columns:210px minmax(0,1fr) 195px}aside{padding:10px}header small{display:none}}@media(max-width:700px){main{height:auto;grid-template-columns:minmax(0,1fr)}aside{max-height:none}#view{height:65dvh;grid-row:1}aside:first-child{border-right:0}aside:last-child{border-left:0;border-top:1px solid #d1cab9}header{padding:10px}header a{margin-left:0}}
+</style>
+<style>#quick{position:absolute;right:12px;bottom:18px;display:flex;gap:5px;flex-wrap:wrap;justify-content:flex-end;max-width:calc(100% - 40px)}#quick a{display:inline-block;padding:8px;background:#fff;border:1px solid #b7c4b4;border-radius:6px;text-decoration:none}#quick a:hover{background:#deebdc}#drive:not([hidden])+nav{bottom:82px}</style>
+<style>#palette button{min-width:0;text-align:center;overflow-wrap:anywhere}#palette button small{display:block}#palette button[aria-pressed=true]{background:#d7e9dc;border-color:#4d7e60}#palette canvas{pointer-events:none}#materialPreview{padding:10px 0}#materialPreview strong{display:block}#materialMedia canvas{height:95px}#materialNote{display:block}input[type=color]{height:38px;padding:3px}</style>
+<header><h1>DoodleBike / 可视化关卡设计</h1><small>摆放素材 → 试玩观察 → 保存到工程</small><a href="/">返回关卡实验室</a></header>
+<main><aside id="tools">
+<label for="level">选择关卡（1～60）</label><select id="level"></select>
+<h2 id="title">加载中…</h2><div id="dirty" role="status">尚未修改</div>
+<div class="row"><button id="test" class="primary">试玩草稿</button><button id="edit" hidden>返回设计</button></div>
+<div class="row"><button id="save" class="primary">保存到工程</button><button id="export">导出草稿</button></div>
+<div id="message" role="status" aria-live="polite"></div><p id="error" role="alert"></p>
+<div class="row"><button id="undo">撤销</button><button id="redo">重做</button></div>
+<div class="row"><button id="fit">地图总览</button><button id="resetTest" class="test-only" hidden>重试草稿</button></div>
+<label><input type="checkbox" id="textures" checked> 原游戏素材</label>
+<label><input type="checkbox" id="snap"> 对齐 10 像素网格</label>
+<label><input type="checkbox" id="trail" checked> 试玩显示小球轨迹</label>
+<section id="materialLibrary"><h2>建筑素材库</h2><small id="materialCount" role="status"></small><p><a href="#view">返回地图画布 ↑</a></p>
+<label>搜索素材<input id="materialSearch" type="search" placeholder="木板、方块、圆石、开关"></label>
+<div id="materialPreview" hidden><strong id="materialName"></strong><div id="materialMedia"></div><small id="materialNote"></small><div class="row"><button id="materialPlace" class="primary">加入地图</button></div></div>
+<div id="palette" aria-label="建筑素材列表"></div></section>
+<details id="spiralPanel"><summary>螺旋轨道生成器</summary><small>预览轮廓后放入地图，可多选移动和旋转。</small>
+<div class="pair"><label>外半径<input id="outer" type="number" value="260" min="100" max="900"></label><label>内半径<input id="inner" type="number" value="110" min="40" max="800"></label></div>
+<div class="pair"><label>旋转圈数<input id="turns" type="number" value="0.75" min="0.25" max="2" step="0.05"></label><label>通道宽度<input id="width" type="number" value="62" min="48" max="150"></label></div>
+<label>起始角度（度）<input id="startAngle" type="number" value="0" step="5"></label>
+<label><input id="outward" type="checkbox"> 从内圈向外圈延伸</label>
+<div class="row"><button id="ghost">预览螺旋</button><button id="addSpiral">放入地图</button></div><button id="clearGhost">关闭轮廓</button></details>
+<hr><small>设计：拖动物体；Shift 点选多选，Shift 拖动空白框选；空白处拖动平移，滚轮缩放。⌘Z 撤销，⌘⇧Z 重做，方向键微调，Delete 删除选中木板。<br>试玩：← / → 或 A / D 驾驶，空格暂停，R 从草稿重试。</small>
+</aside><section id="view"><canvas id="canvas" tabindex="0" aria-label="可拖拽编辑的关卡地图"></canvas><div id="hud">加载中…</div><div id="drive" hidden><button id="left" aria-label="向左驾驶">←</button><button id="right" aria-label="向右驾驶">→</button></div><nav id="quick" aria-label="画布快捷操作"><button id="quickPlay" class="primary">试玩</button><button id="quickEdit" hidden>返回设计</button><button id="quickFit">总览</button><a href="#tools">选材</a><a id="quickProps" href="#inspector">属性</a></nav></section>
+<aside id="inspector"><h2>选中物体</h2><div id="selection">点击木板、货球、车辆或星星</div>
+<div id="properties" hidden>
+<div class="pair"><label>X 坐标<input id="propX" type="number" step="1"></label><label>Y 坐标<input id="propY" type="number" step="1"></label></div>
+<label>旋转角度（度）<input id="propAngle" type="number" step="1"></label>
+<div class="row"><button id="rotateL">↶ 15°</button><button id="rotateR">↷ 15°</button></div>
+<label>透明度<input id="propOpacity" type="number" min="0" max="1" step="0.1"></label>
+<div id="visualProps" hidden><label>外观素材<select id="propFrame"></select></label></div>
+<div id="colorProps" hidden><label>颜色<input id="propColor" type="color" value="#ffffff"></label><label>颜色值<input id="propColorHex" type="text" value="#ffffff" maxlength="7" placeholder="#RRGGBB" spellcheck="false"></label><button id="resetColor">恢复原色</button></div>
+<div id="bodyProps" hidden>
+<div class="pair"><label>密度（0 固定）<input id="propDensity" type="number" min="0" max="100" step="0.1"></label><label>摩擦<input id="propFriction" type="number" min="0" max="100" step="0.05"></label></div><label>弹性<input id="propRestitution" type="number" min="0" max="100" step="0.05"></label></div>
+<div id="collisionProps" hidden><label><input id="propCircle" type="checkbox"> 圆形碰撞</label><label><input id="propSensor" type="checkbox"> 感应体（不阻挡物体）</label></div>
+<div id="labelProps" hidden><label>提示文字<select id="propText"></select></label><label>字号<input id="propFontsize" type="number" min="8" max="100" step="1"></label></div>
+<div id="switchProps" hidden><p id="switchDescription"></p><div id="switchActionProps"><label>触发后移除<select id="propTarget"></select></label><label>延迟（秒）<input id="propDelay" type="number" min="0" max="60" step="0.1"></label></div></div>
+<div class="row"><button id="duplicate">复制素材</button><button id="delete">删除</button></div><div class="row"><button id="selectAssembly" hidden>选中整组机关</button></div></div>
+<div class="row"><button id="selectTrack">选中全部轨道</button></div>
+<hr><h2>使用说明</h2><small>调整的是关卡初始布局。试玩草稿无需保存，返回设计可接着修改。只有点击“保存到工程”才覆盖本关地图，并自动备份。<br><br>素材库只保留基础形状和开关。选中建筑素材后，可直接调整密度、摩擦、弹性和颜色。例如将迷你木板的弹性设为 1.5，即可制作第 24 关的弹性板；颜色可用取色器或 #RRGGBB 设置，支持恢复原色。开关可选择目标与延迟。地图现有货球、车辆和终点仍可拖动调整。电脑物理属于近似模拟，最终仍需安卓手机验证。</small><p id="warnings"></p>
+</aside></main><script src="/materials.js"></script><script src="/editor.js"></script></html>

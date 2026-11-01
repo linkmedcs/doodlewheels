@@ -1,25 +1,21 @@
-<?xml version="1.0"?>
-<lv w="7000" h="1800">
+<?xml version="1.0" encoding="utf-8"?><lv w="5000" h="2200">
+  <!--Original expansion course 49: 双跳接力-->
   <script><![CDATA[function init()
-  gate_1=find "gate_1"
-  color(gate_1,0,0.7,0.3)
-end
-function open_gate_1()
-  remove(gate_1,0.1)
+    color(find("spring"), 1, 0.1, 0.2)
 end]]></script>
-  <!--Original expansion course 49: Gate on the ridge-->
-  <body id="object_001" x="-1601.000" y="-160.000" rotation="0.000" opacity="1" frame="box406" density="0" friction="0.9" restitution="0.1" isSensor="false" isCircle="false" />
-  <body id="object_002" x="-1292.500" y="-160.000" rotation="0.000" opacity="1" frame="box227" density="0" friction="0.9" restitution="0.1" isSensor="false" isCircle="false" />
-  <body id="object_003" x="-986.450" y="-191.130" rotation="-9.000" opacity="1" frame="box406" density="0" friction="0.9" restitution="0.1" isSensor="false" isCircle="false" />
-  <body id="object_004" x="-680.400" y="-222.261" rotation="0.000" opacity="1" frame="box227" density="0" friction="0.9" restitution="0.1" isSensor="false" isCircle="false" />
-  <body id="object_005" x="-374.350" y="-191.130" rotation="9.000" opacity="1" frame="box406" density="0" friction="0.9" restitution="0.1" isSensor="false" isCircle="false" />
-  <body id="object_006" x="21.200" y="-160.000" rotation="0.000" opacity="1" frame="box406" density="0" friction="0.9" restitution="0.1" isSensor="false" isCircle="false" />
-  <body id="object_007" x="329.700" y="-160.000" rotation="0.000" opacity="1" frame="box227" density="0" friction="0.9" restitution="0.1" isSensor="false" isCircle="false" />
-  <body id="object_008" x="638.200" y="-160.000" rotation="0.000" opacity="1" frame="box406" density="0" friction="0.9" restitution="0.1" isSensor="false" isCircle="false" />
-  <wheels id="vehicle" x="-1690.000" y="-217.000" rotation="0.000" opacity="1" />
-  <ball id="cargo" x="-1470.000" y="-208.000" rotation="0.000" opacity="1" />
-  <star id="goal" x="742.200" y="-192.000" rotation="0.000" opacity="1" />
-  <body id="finish_backstop" x="812.200" y="-230.000" rotation="90.000" opacity="1" frame="box134" density="0" friction="0.9" restitution="0.1" isSensor="false" isCircle="false" />
-  <body id="gate_1" x="-614.700" y="-292.261" rotation="90.000" opacity="1" frame="box134" density="0" friction="0.9" restitution="0.1" isSensor="false" isCircle="false" />
-  <switch id="button_1" x="-1358.200" y="-182.000" rotation="0.000" opacity="1" script="open_gate_1" />
+  <!--Push cargo down the slope; cargo and vehicle bounce off the same elastic board, then finish the delivery on the right bank.-->
+  <body id="start" x="-563.714" y="-8.955" frame="box406" rotation="0" density="0" friction="0.7" restitution="0.05" isCircle="false" isSensor="false" opacity="1"/>
+  <body id="slope" x="-165.66" y="18.88" frame="box406" rotation="8" density="0" friction="0.7" restitution="0.05" isCircle="false" isSensor="false" opacity="1"/>
+  <body id="spring" x="305.325" y="321.384" frame="box406" rotation="0" density="0" friction="0" restitution="1.2" isCircle="false" isSensor="false" opacity="1"/>
+  <body id="landing_0" x="753.177" y="140.953" frame="box406" rotation="-15" density="0" friction="1" restitution="0" isCircle="false" isSensor="false" opacity="1"/>
+  <body id="landing_1" x="1144.92" y="89.508" frame="box406" rotation="0" density="0" friction="1" restitution="0" isCircle="false" isSensor="false" opacity="1"/>
+  
+  
+  
+  
+  
+  <body id="backstop" x="1336.554" y="29.686" frame="box134" rotation="90" density="0" friction="0.7" restitution="0" isCircle="false" isSensor="false" opacity="1"/>
+  <wheels id="vehicle" x="-673.714" y="-65.955" rotation="0" opacity="1"/>
+  <ball id="cargo" x="-513.714" y="-40.955" rotation="0" opacity="1"/>
+  <star id="goal" x="1276.55" y="38.843" rotation="0" opacity="1"/>
 </lv>

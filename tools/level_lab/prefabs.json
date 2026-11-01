@@ -1,0 +1,1432 @@
+[
+  {
+    "key": "chain26",
+    "name": "链条桥（原第26关）",
+    "category": "机关组合",
+    "source": "第 26 关",
+    "mode": "prefab",
+    "frame": "box87",
+    "sheet": "entity",
+    "nodes": [
+      {
+        "tag": "body",
+        "attrs": {
+          "id": "go50",
+          "x": "327",
+          "y": "12",
+          "rotation": "0",
+          "opacity": "1",
+          "frame": "circle20",
+          "density": "0.5",
+          "friction": "0.9",
+          "restitution": "0.3",
+          "isSensor": "false",
+          "isCircle": "false"
+        }
+      },
+      {
+        "tag": "body",
+        "attrs": {
+          "id": "go51",
+          "x": "383",
+          "y": "12",
+          "rotation": "0",
+          "opacity": "1",
+          "frame": "box87",
+          "density": "0.5",
+          "friction": "0.9",
+          "restitution": "0.3",
+          "isSensor": "false",
+          "isCircle": "false"
+        }
+      },
+      {
+        "tag": "body",
+        "attrs": {
+          "id": "go52",
+          "x": "446",
+          "y": "12",
+          "rotation": "0",
+          "opacity": "1",
+          "frame": "circle20",
+          "density": "0.5",
+          "friction": "0.9",
+          "restitution": "0.3",
+          "isSensor": "false",
+          "isCircle": "false"
+        }
+      },
+      {
+        "tag": "body",
+        "attrs": {
+          "id": "go53",
+          "x": "502",
+          "y": "12",
+          "rotation": "0",
+          "opacity": "1",
+          "frame": "box87",
+          "density": "0.5",
+          "friction": "0.9",
+          "restitution": "0.3",
+          "isSensor": "false",
+          "isCircle": "false"
+        }
+      },
+      {
+        "tag": "body",
+        "attrs": {
+          "id": "go54",
+          "x": "561",
+          "y": "11",
+          "rotation": "0",
+          "opacity": "1",
+          "frame": "circle20",
+          "density": "0.5",
+          "friction": "0.9",
+          "restitution": "0.3",
+          "isSensor": "false",
+          "isCircle": "false"
+        }
+      },
+      {
+        "tag": "body",
+        "attrs": {
+          "id": "go56",
+          "x": "673",
+          "y": "15",
+          "rotation": "0",
+          "opacity": "1",
+          "frame": "circle20",
+          "density": "0.5",
+          "friction": "0.9",
+          "restitution": "0.3",
+          "isSensor": "false",
+          "isCircle": "false"
+        }
+      },
+      {
+        "tag": "body",
+        "attrs": {
+          "id": "go57",
+          "x": "727",
+          "y": "14",
+          "rotation": "0",
+          "opacity": "1",
+          "frame": "box87",
+          "density": "0.5",
+          "friction": "0.9",
+          "restitution": "0.3",
+          "isSensor": "false",
+          "isCircle": "false"
+        }
+      },
+      {
+        "tag": "body",
+        "attrs": {
+          "id": "go58",
+          "x": "782",
+          "y": "13",
+          "rotation": "0",
+          "opacity": "1",
+          "frame": "circle20",
+          "density": "0.5",
+          "friction": "0.9",
+          "restitution": "0.3",
+          "isSensor": "false",
+          "isCircle": "false"
+        }
+      },
+      {
+        "tag": "body",
+        "attrs": {
+          "id": "go59",
+          "x": "836",
+          "y": "14",
+          "rotation": "0",
+          "opacity": "1",
+          "frame": "box87",
+          "density": "0.5",
+          "friction": "0.9",
+          "restitution": "0.3",
+          "isSensor": "false",
+          "isCircle": "false"
+        }
+      },
+      {
+        "tag": "body",
+        "attrs": {
+          "id": "go60",
+          "x": "892",
+          "y": "15",
+          "rotation": "0",
+          "opacity": "1",
+          "frame": "circle20",
+          "density": "0.5",
+          "friction": "0.9",
+          "restitution": "0.3",
+          "isSensor": "false",
+          "isCircle": "false"
+        }
+      },
+      {
+        "tag": "body",
+        "attrs": {
+          "id": "go62",
+          "x": "1003",
+          "y": "12",
+          "rotation": "0",
+          "opacity": "1",
+          "frame": "circle20",
+          "density": "0.5",
+          "friction": "0.9",
+          "restitution": "0.3",
+          "isSensor": "false",
+          "isCircle": "false"
+        }
+      },
+      {
+        "tag": "body",
+        "attrs": {
+          "id": "go63",
+          "x": "1060",
+          "y": "10",
+          "rotation": "0",
+          "opacity": "1",
+          "frame": "box87",
+          "density": "0.5",
+          "friction": "0.9",
+          "restitution": "0.3",
+          "isSensor": "false",
+          "isCircle": "false"
+        }
+      },
+      {
+        "tag": "body",
+        "attrs": {
+          "id": "go49",
+          "x": "269",
+          "y": "10",
+          "rotation": "2.66",
+          "opacity": "1",
+          "frame": "box87",
+          "density": "0",
+          "friction": "0.9",
+          "restitution": "0.3",
+          "isSensor": "false",
+          "isCircle": "false"
+        }
+      },
+      {
+        "tag": "body",
+        "attrs": {
+          "id": "go55",
+          "x": "616",
+          "y": "13",
+          "rotation": "0",
+          "opacity": "1",
+          "frame": "box87",
+          "density": "0.5",
+          "friction": "0.9",
+          "restitution": "0.3",
+          "isSensor": "false",
+          "isCircle": "false"
+        }
+      },
+      {
+        "tag": "body",
+        "attrs": {
+          "id": "go61",
+          "x": "945",
+          "y": "14",
+          "rotation": "0",
+          "opacity": "1",
+          "frame": "box87",
+          "density": "0.5",
+          "friction": "0.9",
+          "restitution": "0.3",
+          "isSensor": "false",
+          "isCircle": "false"
+        }
+      },
+      {
+        "tag": "body",
+        "attrs": {
+          "id": "go64",
+          "x": "1118",
+          "y": "10",
+          "rotation": "0",
+          "opacity": "1",
+          "frame": "circle20",
+          "density": "0.5",
+          "friction": "0.9",
+          "restitution": "0.3",
+          "isSensor": "false",
+          "isCircle": "false"
+        }
+      },
+      {
+        "tag": "body",
+        "attrs": {
+          "id": "go65",
+          "x": "1175",
+          "y": "11",
+          "rotation": "0",
+          "opacity": "1",
+          "frame": "box87",
+          "density": "0",
+          "friction": "0.9",
+          "restitution": "0.3",
+          "isSensor": "false",
+          "isCircle": "false"
+        }
+      }
+    ],
+    "mechanism": {
+      "kind": "rope",
+      "joints": [
+        {
+          "a": "go49",
+          "link": "go50",
+          "b": "go51"
+        },
+        {
+          "a": "go51",
+          "link": "go52",
+          "b": "go53"
+        },
+        {
+          "a": "go53",
+          "link": "go54",
+          "b": "go55"
+        },
+        {
+          "a": "go55",
+          "link": "go56",
+          "b": "go57"
+        },
+        {
+          "a": "go57",
+          "link": "go58",
+          "b": "go59"
+        },
+        {
+          "a": "go59",
+          "link": "go60",
+          "b": "go61"
+        },
+        {
+          "a": "go61",
+          "link": "go62",
+          "b": "go63"
+        },
+        {
+          "a": "go63",
+          "link": "go64",
+          "b": "go65"
+        }
+      ]
+    },
+    "note": "包含两端固定板、8 段绳索连接与动态链板。"
+  },
+  {
+    "key": "chain26lower",
+    "name": "长链条桥（原第26关）",
+    "category": "机关组合",
+    "source": "第 26 关",
+    "mode": "prefab",
+    "frame": "box87",
+    "sheet": "entity",
+    "nodes": [
+      {
+        "tag": "body",
+        "attrs": {
+          "id": "go76",
+          "x": "271",
+          "y": "150",
+          "rotation": "0",
+          "opacity": "1",
+          "frame": "box87",
+          "density": "0",
+          "friction": "0.9",
+          "restitution": "0.3",
+          "isSensor": "false",
+          "isCircle": "false"
+        }
+      },
+      {
+        "tag": "body",
+        "attrs": {
+          "id": "go79",
+          "x": "439",
+          "y": "156",
+          "rotation": "0",
+          "opacity": "1",
+          "frame": "circle20",
+          "density": "0.2",
+          "friction": "0.9",
+          "restitution": "0.3",
+          "isSensor": "false",
+          "isCircle": "false"
+        }
+      },
+      {
+        "tag": "body",
+        "attrs": {
+          "id": "go80",
+          "x": "499",
+          "y": "156",
+          "rotation": "0",
+          "opacity": "1",
+          "frame": "box87",
+          "density": "0.2",
+          "friction": "0.9",
+          "restitution": "0.3",
+          "isSensor": "false",
+          "isCircle": "false"
+        }
+      },
+      {
+        "tag": "body",
+        "attrs": {
+          "id": "go81",
+          "x": "558",
+          "y": "154",
+          "rotation": "0",
+          "opacity": "1",
+          "frame": "circle20",
+          "density": "0.2",
+          "friction": "0.9",
+          "restitution": "0.3",
+          "isSensor": "false",
+          "isCircle": "false"
+        }
+      },
+      {
+        "tag": "body",
+        "attrs": {
+          "id": "go82",
+          "x": "613",
+          "y": "154",
+          "rotation": "0",
+          "opacity": "1",
+          "frame": "box87",
+          "density": "0.2",
+          "friction": "0.9",
+          "restitution": "0.3",
+          "isSensor": "false",
+          "isCircle": "false"
+        }
+      },
+      {
+        "tag": "body",
+        "attrs": {
+          "id": "go83",
+          "x": "671",
+          "y": "154",
+          "rotation": "0",
+          "opacity": "1",
+          "frame": "circle20",
+          "density": "0.2",
+          "friction": "0.9",
+          "restitution": "0.3",
+          "isSensor": "false",
+          "isCircle": "false"
+        }
+      },
+      {
+        "tag": "body",
+        "attrs": {
+          "id": "go84",
+          "x": "726",
+          "y": "154",
+          "rotation": "0",
+          "opacity": "1",
+          "frame": "box87",
+          "density": "0.2",
+          "friction": "0.9",
+          "restitution": "0.3",
+          "isSensor": "false",
+          "isCircle": "false"
+        }
+      },
+      {
+        "tag": "body",
+        "attrs": {
+          "id": "go85",
+          "x": "781",
+          "y": "153",
+          "rotation": "0",
+          "opacity": "1",
+          "frame": "circle20",
+          "density": "0.2",
+          "friction": "0.9",
+          "restitution": "0.3",
+          "isSensor": "false",
+          "isCircle": "false"
+        }
+      },
+      {
+        "tag": "body",
+        "attrs": {
+          "id": "go87",
+          "x": "891",
+          "y": "153",
+          "rotation": "0",
+          "opacity": "1",
+          "frame": "circle20",
+          "density": "0.2",
+          "friction": "0.9",
+          "restitution": "0.3",
+          "isSensor": "false",
+          "isCircle": "false"
+        }
+      },
+      {
+        "tag": "body",
+        "attrs": {
+          "id": "go88",
+          "x": "947",
+          "y": "152",
+          "rotation": "0",
+          "opacity": "1",
+          "frame": "box87",
+          "density": "0.2",
+          "friction": "0.9",
+          "restitution": "0.3",
+          "isSensor": "false",
+          "isCircle": "false"
+        }
+      },
+      {
+        "tag": "body",
+        "attrs": {
+          "id": "go89",
+          "x": "1001",
+          "y": "151",
+          "rotation": "0",
+          "opacity": "1",
+          "frame": "circle20",
+          "density": "0.2",
+          "friction": "0.9",
+          "restitution": "0.3",
+          "isSensor": "false",
+          "isCircle": "false"
+        }
+      },
+      {
+        "tag": "body",
+        "attrs": {
+          "id": "go93",
+          "x": "1225",
+          "y": "149",
+          "rotation": "0",
+          "opacity": "1",
+          "frame": "circle20",
+          "density": "0.2",
+          "friction": "0.9",
+          "restitution": "0.3",
+          "isSensor": "false",
+          "isCircle": "false"
+        }
+      },
+      {
+        "tag": "body",
+        "attrs": {
+          "id": "go95",
+          "x": "1336",
+          "y": "145",
+          "rotation": "0",
+          "opacity": "1",
+          "frame": "circle20",
+          "density": "0.2",
+          "friction": "0.9",
+          "restitution": "0.3",
+          "isSensor": "false",
+          "isCircle": "false"
+        }
+      },
+      {
+        "tag": "body",
+        "attrs": {
+          "id": "go96",
+          "x": "1386",
+          "y": "120",
+          "rotation": "-27.3476",
+          "opacity": "1",
+          "frame": "box87",
+          "density": "0",
+          "friction": "0.9",
+          "restitution": "0.3",
+          "isSensor": "false",
+          "isCircle": "false"
+        }
+      },
+      {
+        "tag": "body",
+        "attrs": {
+          "id": "go77",
+          "x": "326",
+          "y": "153",
+          "rotation": "0",
+          "opacity": "1",
+          "frame": "circle20",
+          "density": "0.2",
+          "friction": "0.9",
+          "restitution": "0.3",
+          "isSensor": "false",
+          "isCircle": "false"
+        }
+      },
+      {
+        "tag": "body",
+        "attrs": {
+          "id": "go78",
+          "x": "382",
+          "y": "156",
+          "rotation": "0",
+          "opacity": "1",
+          "frame": "box87",
+          "density": "0.2",
+          "friction": "0.9",
+          "restitution": "0.3",
+          "isSensor": "false",
+          "isCircle": "false"
+        }
+      },
+      {
+        "tag": "body",
+        "attrs": {
+          "id": "go86",
+          "x": "835",
+          "y": "153",
+          "rotation": "0",
+          "opacity": "1",
+          "frame": "box87",
+          "density": "0.2",
+          "friction": "0.9",
+          "restitution": "0.3",
+          "isSensor": "false",
+          "isCircle": "false"
+        }
+      },
+      {
+        "tag": "body",
+        "attrs": {
+          "id": "go90",
+          "x": "1057",
+          "y": "151",
+          "rotation": "0",
+          "opacity": "1",
+          "frame": "box87",
+          "density": "0.2",
+          "friction": "0.9",
+          "restitution": "0.3",
+          "isSensor": "false",
+          "isCircle": "false"
+        }
+      },
+      {
+        "tag": "body",
+        "attrs": {
+          "id": "go92",
+          "x": "1168",
+          "y": "149",
+          "rotation": "0",
+          "opacity": "1",
+          "frame": "box87",
+          "density": "0.2",
+          "friction": "0.9",
+          "restitution": "0.3",
+          "isSensor": "false",
+          "isCircle": "false"
+        }
+      },
+      {
+        "tag": "body",
+        "attrs": {
+          "id": "go94",
+          "x": "1279",
+          "y": "148",
+          "rotation": "0",
+          "opacity": "1",
+          "frame": "box87",
+          "density": "0.2",
+          "friction": "0.9",
+          "restitution": "0.3",
+          "isSensor": "false",
+          "isCircle": "false"
+        }
+      },
+      {
+        "tag": "body",
+        "attrs": {
+          "id": "go91",
+          "x": "1114",
+          "y": "147",
+          "rotation": "0",
+          "opacity": "1",
+          "frame": "circle20",
+          "density": "0.2",
+          "friction": "0.9",
+          "restitution": "0.3",
+          "isSensor": "false",
+          "isCircle": "false"
+        }
+      }
+    ],
+    "mechanism": {
+      "kind": "rope",
+      "joints": [
+        {
+          "a": "go76",
+          "link": "go77",
+          "b": "go78"
+        },
+        {
+          "a": "go78",
+          "link": "go79",
+          "b": "go80"
+        },
+        {
+          "a": "go80",
+          "link": "go81",
+          "b": "go82"
+        },
+        {
+          "a": "go82",
+          "link": "go83",
+          "b": "go84"
+        },
+        {
+          "a": "go84",
+          "link": "go85",
+          "b": "go86"
+        },
+        {
+          "a": "go86",
+          "link": "go87",
+          "b": "go88"
+        },
+        {
+          "a": "go88",
+          "link": "go89",
+          "b": "go90"
+        },
+        {
+          "a": "go90",
+          "link": "go91",
+          "b": "go92"
+        },
+        {
+          "a": "go92",
+          "link": "go93",
+          "b": "go94"
+        },
+        {
+          "a": "go94",
+          "link": "go95",
+          "b": "go96"
+        }
+      ]
+    },
+    "note": "原第26关下层链条，包含10段绳索连接。"
+  },
+  {
+    "key": "ferry47",
+    "name": "双链吊台（第47关）",
+    "category": "机关组合",
+    "source": "第 47 关",
+    "mode": "prefab",
+    "frame": "box87",
+    "sheet": "entity",
+    "nodes": [
+      {
+        "tag": "body",
+        "attrs": {
+          "id": "suspension_beam",
+          "x": "59.018",
+          "y": "-407.411",
+          "rotation": "0.000",
+          "opacity": "1",
+          "frame": "box227",
+          "density": "0",
+          "friction": "0.7",
+          "restitution": "0",
+          "isSensor": "false",
+          "isCircle": "false"
+        }
+      },
+      {
+        "tag": "body",
+        "attrs": {
+          "id": "left_anchor",
+          "x": "17.418",
+          "y": "-362.411",
+          "rotation": "112.000",
+          "opacity": "1",
+          "frame": "box87",
+          "density": "0",
+          "friction": "0.7",
+          "restitution": "0",
+          "isSensor": "true",
+          "isCircle": "false"
+        }
+      },
+      {
+        "tag": "body",
+        "attrs": {
+          "id": "left_c1",
+          "x": "-5.358",
+          "y": "-306.039",
+          "rotation": "0.000",
+          "opacity": "1",
+          "frame": "circle20",
+          "density": "0.2",
+          "friction": "0.7",
+          "restitution": "0",
+          "isSensor": "true",
+          "isCircle": "false"
+        }
+      },
+      {
+        "tag": "body",
+        "attrs": {
+          "id": "left_link1",
+          "x": "-28.134",
+          "y": "-249.666",
+          "rotation": "112.000",
+          "opacity": "1",
+          "frame": "box87",
+          "density": "0.2",
+          "friction": "0.7",
+          "restitution": "0",
+          "isSensor": "true",
+          "isCircle": "false"
+        }
+      },
+      {
+        "tag": "body",
+        "attrs": {
+          "id": "left_c2",
+          "x": "-50.910",
+          "y": "-193.293",
+          "rotation": "0.000",
+          "opacity": "1",
+          "frame": "circle20",
+          "density": "0.2",
+          "friction": "0.7",
+          "restitution": "0",
+          "isSensor": "true",
+          "isCircle": "false"
+        }
+      },
+      {
+        "tag": "body",
+        "attrs": {
+          "id": "left_link2",
+          "x": "-73.686",
+          "y": "-136.920",
+          "rotation": "112.000",
+          "opacity": "1",
+          "frame": "box87",
+          "density": "0.2",
+          "friction": "0.7",
+          "restitution": "0",
+          "isSensor": "true",
+          "isCircle": "false"
+        }
+      },
+      {
+        "tag": "body",
+        "attrs": {
+          "id": "left_c3",
+          "x": "-96.462",
+          "y": "-80.547",
+          "rotation": "0.000",
+          "opacity": "1",
+          "frame": "circle20",
+          "density": "0.2",
+          "friction": "0.7",
+          "restitution": "0",
+          "isSensor": "true",
+          "isCircle": "false"
+        }
+      },
+      {
+        "tag": "body",
+        "attrs": {
+          "id": "left_link3",
+          "x": "-119.238",
+          "y": "-24.175",
+          "rotation": "112.000",
+          "opacity": "1",
+          "frame": "box87",
+          "density": "0.2",
+          "friction": "0.7",
+          "restitution": "0",
+          "isSensor": "true",
+          "isCircle": "false"
+        }
+      },
+      {
+        "tag": "body",
+        "attrs": {
+          "id": "left_c4",
+          "x": "-142.015",
+          "y": "32.198",
+          "rotation": "0.000",
+          "opacity": "1",
+          "frame": "circle20",
+          "density": "0.2",
+          "friction": "0.7",
+          "restitution": "0",
+          "isSensor": "true",
+          "isCircle": "false"
+        }
+      },
+      {
+        "tag": "body",
+        "attrs": {
+          "id": "right_anchor",
+          "x": "100.618",
+          "y": "-362.411",
+          "rotation": "-68.000",
+          "opacity": "1",
+          "frame": "box87",
+          "density": "0",
+          "friction": "0.7",
+          "restitution": "0",
+          "isSensor": "true",
+          "isCircle": "false"
+        }
+      },
+      {
+        "tag": "body",
+        "attrs": {
+          "id": "right_c1",
+          "x": "77.842",
+          "y": "-306.039",
+          "rotation": "0.000",
+          "opacity": "1",
+          "frame": "circle20",
+          "density": "0.2",
+          "friction": "0.7",
+          "restitution": "0",
+          "isSensor": "true",
+          "isCircle": "false"
+        }
+      },
+      {
+        "tag": "body",
+        "attrs": {
+          "id": "right_link1",
+          "x": "55.066",
+          "y": "-249.666",
+          "rotation": "-68.000",
+          "opacity": "1",
+          "frame": "box87",
+          "density": "0.2",
+          "friction": "0.7",
+          "restitution": "0",
+          "isSensor": "true",
+          "isCircle": "false"
+        }
+      },
+      {
+        "tag": "body",
+        "attrs": {
+          "id": "right_c2",
+          "x": "32.290",
+          "y": "-193.293",
+          "rotation": "0.000",
+          "opacity": "1",
+          "frame": "circle20",
+          "density": "0.2",
+          "friction": "0.7",
+          "restitution": "0",
+          "isSensor": "true",
+          "isCircle": "false"
+        }
+      },
+      {
+        "tag": "body",
+        "attrs": {
+          "id": "right_link2",
+          "x": "9.514",
+          "y": "-136.920",
+          "rotation": "-68.000",
+          "opacity": "1",
+          "frame": "box87",
+          "density": "0.2",
+          "friction": "0.7",
+          "restitution": "0",
+          "isSensor": "true",
+          "isCircle": "false"
+        }
+      },
+      {
+        "tag": "body",
+        "attrs": {
+          "id": "right_c3",
+          "x": "-13.262",
+          "y": "-80.547",
+          "rotation": "0.000",
+          "opacity": "1",
+          "frame": "circle20",
+          "density": "0.2",
+          "friction": "0.7",
+          "restitution": "0",
+          "isSensor": "true",
+          "isCircle": "false"
+        }
+      },
+      {
+        "tag": "body",
+        "attrs": {
+          "id": "right_link3",
+          "x": "-36.038",
+          "y": "-24.175",
+          "rotation": "-68.000",
+          "opacity": "1",
+          "frame": "box87",
+          "density": "0.2",
+          "friction": "0.7",
+          "restitution": "0",
+          "isSensor": "true",
+          "isCircle": "false"
+        }
+      },
+      {
+        "tag": "body",
+        "attrs": {
+          "id": "right_c4",
+          "x": "-58.815",
+          "y": "32.198",
+          "rotation": "0.000",
+          "opacity": "1",
+          "frame": "circle20",
+          "density": "0.2",
+          "friction": "0.7",
+          "restitution": "0",
+          "isSensor": "true",
+          "isCircle": "false"
+        }
+      },
+      {
+        "tag": "body",
+        "attrs": {
+          "id": "ferry",
+          "x": "-107.607",
+          "y": "50.000",
+          "rotation": "0.000",
+          "opacity": "1",
+          "frame": "box227",
+          "density": "1",
+          "friction": "1",
+          "restitution": "0",
+          "isSensor": "false",
+          "isCircle": "false"
+        }
+      }
+    ],
+    "mechanism": {
+      "kind": "rope",
+      "extras": [
+        "suspension_beam"
+      ],
+      "joints": [
+        {
+          "a": "left_anchor",
+          "link": "left_c1",
+          "b": "left_link1"
+        },
+        {
+          "a": "left_link1",
+          "link": "left_c2",
+          "b": "left_link2"
+        },
+        {
+          "a": "left_link2",
+          "link": "left_c3",
+          "b": "left_link3"
+        },
+        {
+          "a": "left_link3",
+          "link": "left_c4",
+          "b": "ferry"
+        },
+        {
+          "a": "ferry",
+          "link": "right_c4",
+          "b": "right_link3"
+        },
+        {
+          "a": "right_link3",
+          "link": "right_c3",
+          "b": "right_link2"
+        },
+        {
+          "a": "right_link2",
+          "link": "right_c2",
+          "b": "right_link1"
+        },
+        {
+          "a": "right_link1",
+          "link": "right_c1",
+          "b": "right_anchor"
+        }
+      ]
+    },
+    "note": "两条绳索链共同悬挂承载台，保留22°初始摆角。"
+  },
+  {
+    "key": "lever23",
+    "name": "联动跷跷板（原第23关）",
+    "category": "机关组合",
+    "source": "第 23 关",
+    "mode": "prefab",
+    "frame": "circle16",
+    "sheet": "entity",
+    "nodes": [
+      {
+        "tag": "body",
+        "attrs": {
+          "id": "go6",
+          "x": "-588",
+          "y": "21",
+          "rotation": "0",
+          "opacity": "1",
+          "frame": "circle16",
+          "density": "0",
+          "friction": "0.9",
+          "restitution": "0.3",
+          "isSensor": "false",
+          "isCircle": "false"
+        }
+      },
+      {
+        "tag": "body",
+        "attrs": {
+          "id": "go12",
+          "x": "-588",
+          "y": "20",
+          "rotation": "29.04",
+          "opacity": "0.2",
+          "frame": "box406",
+          "density": "0.2",
+          "friction": "0.9",
+          "restitution": "0.3",
+          "isSensor": "true",
+          "isCircle": "false"
+        }
+      },
+      {
+        "tag": "body",
+        "attrs": {
+          "id": "go4",
+          "x": "-761",
+          "y": "-81",
+          "rotation": "0",
+          "opacity": "1",
+          "frame": "box227",
+          "density": "0.1",
+          "friction": "0.9",
+          "restitution": "0",
+          "isSensor": "false",
+          "isCircle": "false"
+        }
+      },
+      {
+        "tag": "body",
+        "attrs": {
+          "id": "go7",
+          "x": "-414",
+          "y": "122",
+          "rotation": "0",
+          "opacity": "1",
+          "frame": "box227",
+          "density": "0.1",
+          "friction": "0.9",
+          "restitution": "0",
+          "isSensor": "false",
+          "isCircle": "false"
+        }
+      }
+    ],
+    "mechanism": {
+      "kind": "linkage",
+      "bodies": [
+        "go4",
+        "go7",
+        "go6",
+        "go12"
+      ]
+    },
+    "note": "保留原版 create23 连接；电脑端为近似联动。"
+  },
+  {
+    "key": "lift10",
+    "name": "开关升降台（原第10关）",
+    "category": "机关组合",
+    "source": "第 10 关",
+    "mode": "prefab",
+    "frame": "switch",
+    "sheet": "entity",
+    "nodes": [
+      {
+        "tag": "body",
+        "attrs": {
+          "id": "go18",
+          "x": "-306",
+          "y": "-79",
+          "rotation": "0",
+          "opacity": "1",
+          "frame": "box406",
+          "density": "0",
+          "friction": "0.9",
+          "restitution": "0.3",
+          "isSensor": "false",
+          "isCircle": "false"
+        }
+      },
+      {
+        "tag": "body",
+        "attrs": {
+          "id": "go16",
+          "x": "-708",
+          "y": "524",
+          "rotation": "0.1",
+          "opacity": "1",
+          "frame": "box406",
+          "density": "0",
+          "friction": "0.9",
+          "restitution": "0.3",
+          "isSensor": "false",
+          "isCircle": "false"
+        }
+      },
+      {
+        "tag": "switch",
+        "attrs": {
+          "id": "go17",
+          "script": "act",
+          "x": "-679",
+          "y": "503",
+          "rotation": "0",
+          "opacity": "1"
+        }
+      }
+    ],
+    "mechanism": {
+      "kind": "lift",
+      "platform": "go16",
+      "anchor": "go18",
+      "switch": "go17"
+    },
+    "note": "包含平台、上方锚点和开关，使用原版升降接口。"
+  },
+  {
+    "key": "gate49",
+    "name": "开关移除挡板（原第49关）",
+    "category": "机关组合",
+    "source": "第 49 关",
+    "mode": "prefab",
+    "frame": "switch",
+    "sheet": "entity",
+    "nodes": [
+      {
+        "tag": "body",
+        "attrs": {
+          "id": "gate_1",
+          "x": "-614.700",
+          "y": "-292.261",
+          "rotation": "90.000",
+          "opacity": "1",
+          "frame": "box134",
+          "density": "0",
+          "friction": "0.9",
+          "restitution": "0.1",
+          "isSensor": "false",
+          "isCircle": "false"
+        }
+      },
+      {
+        "tag": "switch",
+        "attrs": {
+          "id": "button_1",
+          "x": "-1358.200",
+          "y": "-182.000",
+          "rotation": "0.000",
+          "opacity": "1",
+          "script": "open_gate_1"
+        },
+        "action": {
+          "kind": "remove",
+          "target": "gate_1",
+          "delay": 0.1
+        }
+      }
+    ],
+    "mechanism": {
+      "kind": "assembly",
+      "bodies": [
+        "gate_1",
+        "button_1"
+      ]
+    },
+    "note": "开关触发后移除指定挡板，可在属性中调整延迟。"
+  },
+  {
+    "key": "catapult46",
+    "name": "大球弹射跷跷板（第46关）",
+    "category": "机关组合",
+    "source": "第 46 关",
+    "mode": "prefab",
+    "frame": "circle114",
+    "sheet": "entity",
+    "nodes": [
+      {
+        "tag": "body",
+        "attrs": {
+          "id": "fulcrum",
+          "x": "50.000",
+          "y": "-4.326",
+          "rotation": "0.000",
+          "opacity": "1",
+          "frame": "circle20",
+          "density": "0",
+          "friction": "0.9",
+          "restitution": "0",
+          "isSensor": "false",
+          "isCircle": "true"
+        }
+      },
+      {
+        "tag": "body",
+        "attrs": {
+          "id": "closed_stop",
+          "x": "-160.000",
+          "y": "94.000",
+          "rotation": "-25.000",
+          "opacity": "1",
+          "frame": "box73",
+          "density": "0",
+          "friction": "0.9",
+          "restitution": "0",
+          "isSensor": "false",
+          "isCircle": "false"
+        }
+      },
+      {
+        "tag": "body",
+        "attrs": {
+          "id": "bridge",
+          "x": "0.000",
+          "y": "0.000",
+          "rotation": "-25.000",
+          "opacity": "1",
+          "frame": "box406",
+          "density": "40",
+          "friction": "0.9",
+          "restitution": "0",
+          "isSensor": "false",
+          "isCircle": "false"
+        }
+      },
+      {
+        "tag": "body",
+        "attrs": {
+          "id": "stone_gate",
+          "x": "160.000",
+          "y": "-187.000",
+          "rotation": "0.000",
+          "opacity": "1",
+          "frame": "box134",
+          "density": "0",
+          "friction": "0.9",
+          "restitution": "0",
+          "isSensor": "false",
+          "isCircle": "false"
+        }
+      },
+      {
+        "tag": "body",
+        "attrs": {
+          "id": "stone",
+          "x": "160.000",
+          "y": "-255.000",
+          "rotation": "0.000",
+          "opacity": "1",
+          "frame": "circle114",
+          "density": "50",
+          "friction": "0.5",
+          "restitution": "0",
+          "isSensor": "false",
+          "isCircle": "true"
+        }
+      },
+      {
+        "tag": "body",
+        "attrs": {
+          "id": "trap_floor",
+          "x": "278.000",
+          "y": "125.000",
+          "rotation": "0.000",
+          "opacity": "1",
+          "frame": "box227",
+          "density": "0",
+          "friction": "0.9",
+          "restitution": "0",
+          "isSensor": "false",
+          "isCircle": "false"
+        }
+      },
+      {
+        "tag": "body",
+        "attrs": {
+          "id": "trap_right",
+          "x": "351.000",
+          "y": "91.000",
+          "rotation": "90.000",
+          "opacity": "1",
+          "frame": "box134",
+          "density": "0",
+          "friction": "0.9",
+          "restitution": "0",
+          "isSensor": "false",
+          "isCircle": "false"
+        }
+      },
+      {
+        "tag": "switch",
+        "attrs": {
+          "id": "release_switch",
+          "x": "-777.000",
+          "y": "58.500",
+          "rotation": "0.000",
+          "opacity": "1",
+          "script": "release"
+        },
+        "action": {
+          "kind": "remove",
+          "target": "stone_gate",
+          "delay": 3
+        }
+      }
+    ],
+    "mechanism": {
+      "kind": "assembly",
+      "bodies": [
+        "fulcrum",
+        "closed_stop",
+        "bridge",
+        "stone_gate",
+        "stone",
+        "release_switch",
+        "trap_floor",
+        "trap_right"
+      ]
+    },
+    "note": "保留大球、支点、承载板和3秒延迟释放开关；需自行衔接起终点。"
+  }
+]

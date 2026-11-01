@@ -1,20 +1,34 @@
-<?xml version="1.0"?>
-<lv w="7000" h="1800">
+<?xml version="1.0" encoding="utf-8"?><lv w="4000" h="1200">
+  <!--Original expansion course 46: 借重弹射-->
   <script><![CDATA[function init()
+    gate = find "stone_gate"
+    color(gate, 0.2, 0.8, 0.3)
+    color(find("bridge"), 0.35, 0.55, 0.85)
+    released = false
+end
+
+function release()
+    if released then return end
+    released = true
+    -- Release the stone three seconds after activating the switch.
+    remove(gate, 3.0)
 end]]></script>
-  <!--Original expansion course 46: Twin ridge valley-->
-  <body id="object_001" x="-1601.000" y="-160.000" rotation="0.000" opacity="1" frame="box406" density="0" friction="0.9" restitution="0.1" isSensor="false" isCircle="false" />
-  <body id="object_002" x="-1207.349" y="-118.626" rotation="12.000" opacity="1" frame="box406" density="0" friction="0.9" restitution="0.1" isSensor="false" isCircle="false" />
-  <body id="object_003" x="-818.046" y="-35.877" rotation="12.000" opacity="1" frame="box406" density="0" friction="0.9" restitution="0.1" isSensor="false" isCircle="false" />
-  <body id="object_004" x="-513.895" y="5.498" rotation="0.000" opacity="1" frame="box227" density="0" friction="0.9" restitution="0.1" isSensor="false" isCircle="false" />
-  <body id="object_005" x="-209.743" y="-35.877" rotation="-12.000" opacity="1" frame="box406" density="0" friction="0.9" restitution="0.1" isSensor="false" isCircle="false" />
-  <body id="object_006" x="179.560" y="-118.626" rotation="-12.000" opacity="1" frame="box406" density="0" friction="0.9" restitution="0.1" isSensor="false" isCircle="false" />
-  <body id="object_007" x="483.711" y="-160.000" rotation="0.000" opacity="1" frame="box227" density="0" friction="0.9" restitution="0.1" isSensor="false" isCircle="false" />
-  <body id="object_008" x="789.761" y="-128.870" rotation="9.000" opacity="1" frame="box406" density="0" friction="0.9" restitution="0.1" isSensor="false" isCircle="false" />
-  <body id="object_009" x="1182.861" y="-128.870" rotation="-9.000" opacity="1" frame="box406" density="0" friction="0.9" restitution="0.1" isSensor="false" isCircle="false" />
-  <body id="object_010" x="1578.411" y="-160.000" rotation="0.000" opacity="1" frame="box406" density="0" friction="0.9" restitution="0.1" isSensor="false" isCircle="false" />
-  <wheels id="vehicle" x="-1690.000" y="-217.000" rotation="0.000" opacity="1" />
-  <ball id="cargo" x="-1470.000" y="-208.000" rotation="0.000" opacity="1" />
-  <star id="goal" x="1682.411" y="-192.000" rotation="0.000" opacity="1" />
-  <body id="finish_backstop" x="1752.411" y="-230.000" rotation="90.000" opacity="1" frame="box134" density="0" friction="0.9" restitution="0.1" isSensor="false" isCircle="false" />
+  <body id="start_outer" x="-724.500" y="70.000" rotation="0.000" opacity="1" frame="box227" density="0" friction="0.9" restitution="0" isSensor="false" isCircle="false"/>
+  <body id="start_inner" x="-408.000" y="70.000" rotation="0.000" opacity="1" frame="box406" density="0" friction="0.9" restitution="0" isSensor="false" isCircle="false"/>
+  <body id="start_backstop" x="-846.136" y="13.183" rotation="90.000" opacity="1" frame="box134" density="0" friction="0.9" restitution="0" isSensor="false" isCircle="false"/>
+  <!-- Shift the support right along the resting plank to increase left-arm travel. -->
+  <body id="fulcrum" x="50.000" y="-4.326" rotation="0.000" opacity="1" frame="circle20" density="0" friction="0.9" restitution="0" isSensor="false" isCircle="true"/>
+  <body id="closed_stop" x="-160.000" y="94.000" rotation="-25.000" opacity="1" frame="box73" density="0" friction="0.9" restitution="0" isSensor="false" isCircle="false"/>
+  <body id="bridge" x="0.000" y="0.000" rotation="-25.000" opacity="1" frame="box406" density="40" friction="0.9" restitution="0" isSensor="false" isCircle="false"/>
+  <body id="catch_block" x="165.000" y="135.000" rotation="35.000" opacity="1" frame="box73" density="0" friction="0.9" restitution="0" isSensor="false" isCircle="false"/>
+  <body id="stone_gate" x="160.000" y="-187.000" rotation="0.000" opacity="1" frame="box134" density="0" friction="0.9" restitution="0" isSensor="false" isCircle="false"/>
+  <body id="stone" x="160.000" y="-255.000" rotation="0.000" opacity="1" frame="circle114" density="50" friction="0.5" restitution="0" isSensor="false" isCircle="true"/>
+  <body id="trap_floor" x="278.000" y="125.000" rotation="0.000" opacity="1" frame="box227" density="0" friction="0.9" restitution="0" isSensor="false" isCircle="false"/>
+  <body id="trap_right" x="351.000" y="91.000" rotation="90.000" opacity="1" frame="box134" density="0" friction="0.9" restitution="0" isSensor="false" isCircle="false"/>
+  <body id="finish_road" x="-450.000" y="-150.000" rotation="0.000" opacity="1" frame="box227" density="0" friction="0.9" restitution="0" isSensor="false" isCircle="false"/>
+  <body id="finish_backstop" x="-568.000" y="-215.000" rotation="90.000" opacity="1" frame="box134" density="0" friction="0.9" restitution="0" isSensor="false" isCircle="false"/>
+  <wheels id="vehicle" x="-650.000" y="27.500" rotation="0.000" opacity="1"/>
+  <ball id="cargo" x="-415.000" y="34.500" rotation="0.000" opacity="1"/>
+  <star id="goal" x="-450.000" y="-190.000" rotation="0.000" opacity="1"/>
+  <switch id="release_switch" x="-777.000" y="58.500" rotation="0.000" opacity="1" script="release"/>
 </lv>
