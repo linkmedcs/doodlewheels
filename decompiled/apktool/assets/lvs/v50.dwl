@@ -45,11 +45,12 @@ end]]></script>
   <body id="pebble_4_4" x="493" y="40" frame="circle20" rotation="40" density="5" friction="2.5" restitution="0.02" isSensor="false" isCircle="false" opacity="1"/>
   <body id="pebble_4_5" x="525" y="40" frame="circle20" rotation="53" density="5" friction="2.5" restitution="0.02" isSensor="false" isCircle="false" opacity="1"/>
   <wheels id="vehicle" x="300" y="458" rotation="0" opacity="1"/>
-  <ball id="cargo" x="1077.925" y="407.647" rotation="0" opacity="1"/>
-  <star id="goal" x="1173.266" y="404.77" rotation="0" opacity="1"/>
+  <ball id="cargo" x="1079.53" y="381.623" rotation="0" opacity="1"/>
+  <star id="goal" x="1174.871" y="378.746" rotation="0" opacity="1"/>
   <switch id="release_button" x="395" y="477" rotation="0" opacity="1" script="release_stones"/>
 
   <body id="editor_mvxyo6q6_5" x="847.432" y="499.987" rotation="0" opacity="1" frame="box406" density="0" friction="0.9" restitution="0.3" isSensor="false" isCircle="false"/>
-  <body id="editor_mvxyoja1_6" x="1231.303" y="443.593" rotation="0" opacity="1" frame="box406" density="0" friction="0.9" restitution="0.3" isSensor="false" isCircle="false"/>
+  <body id="editor_mvxyoja1_6" x="1232.908" y="417.569" rotation="0" opacity="1" frame="box406" density="0" friction="0.9" restitution="0.3" isSensor="false" isCircle="false"/>
   <body id="editor_mvxyp6in_8" x="1039.466" y="471.391" rotation="90" opacity="1" frame="box73" density="0" friction="0.9" restitution="0.3" isSensor="false" isCircle="false"/>
-  <body id="editor_mvxyulw2_1" x="142.295" y="500.348" rotation="0" opacity="1" frame="box227" density="0" friction="0.9" restitution="0.3" isSensor="false" isCircle="false"/></lv>
+  <body id="editor_mvxyulw2_1" x="142.295" y="500.348" rotation="0" opacity="1" frame="box227" density="0" friction="0.9" restitution="0.3" isSensor="false" isCircle="false"/>
+  <body id="editor_mvxzh0l7_3" x="1039.558" y="443.334" rotation="90" opacity="1" frame="box73" density="0" friction="0.9" restitution="0.3" isSensor="false" isCircle="false"/></lv>

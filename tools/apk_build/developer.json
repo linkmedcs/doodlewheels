@@ -1,0 +1,28 @@
+{
+  "source_package": "com.cloud.dw.mms",
+  "package": "com.cloud.dw.mms.dev",
+  "label": "DoodleWheels 开发版",
+  "native_file": "lib/armeabi/libgame.so",
+  "guards": [
+    {
+      "address": "0xa5df8",
+      "expected": "0c235343cb189d69254b7b441b682d9300232e939d4214d1224878445ef017fc"
+    },
+    {
+      "address": "0xa5e3a",
+      "expected": "012d32d11848784431e0"
+    },
+    {
+      "address": "0xa5f8c",
+      "expected": "3c2900d009e7"
+    }
+  ],
+  "patches": [
+    {
+      "address": "0xa5e10",
+      "expected": "22487844",
+      "replacement": "012512e0",
+      "description": "LevelsScreen::onEnter: locked state 0 uses available state 1 for menu rendering and click callbacks; saved level states and completed level appearances are preserved. Thumb: movs r5, #1; b 0xa5e3a."
+    }
+  ]
+}
