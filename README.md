@@ -10,7 +10,7 @@
 
 恢复来源 APK 的 SHA-256 为 `c6ca9b37e9c522787c6564f32a1b2fca94f7e7670fd571563a25bcab59b37f52`。已重新构建并验证签名和对齐；代码、素材、60 个关卡及原生库与来源包逐字节一致，资源表经重新编译后解码内容一致，尚未真机验证。APK 不包含此前用于生成地图的 Python 脚本，这些开发脚本未恢复。
 
-重新打包：双击根目录的 `打包普通版和开发版.command`，或运行 `python3 tools/apk_build/build.py`，同时生成普通最新版和全 60 关解锁的开发版。脚本仅在构建副本中应用开发版补丁，不修改 `decompiled`。[打包说明](tools/apk_build/README.md)。签名密钥保存在本地 `.local-signing/`，构建产物与私钥均不提交。
+重新打包：双击根目录的 `pack.command`，或运行 `python3 tools/apk_build/build.py`，同时生成普通最新版和全 60 关解锁的开发版。脚本仅在构建副本中应用开发版补丁，不修改 `decompiled`。[打包说明](tools/apk_build/README.md)。签名密钥保存在本地 `.local-signing/`，构建产物与私钥均不提交。
 
 `decompiled/raw/` 保存原始解包内容；`decompiled/apktool/` 保存可进一步编辑、重打包的 Smali 与资源；`decompiled/jadx/` 中的 Java 代码供阅读分析。
 

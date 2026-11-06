@@ -1,6 +1,6 @@
 # 普通版与全关卡解锁开发版
 
-在 Finder 中双击根目录的 `打包普通版和开发版.command`；也可以在项目根目录运行：
+在 Finder 中双击根目录的 `pack.command`；也可以在项目根目录运行 `./pack.command`、`bash pack.command`，或：
 
 ```sh
 python3 tools/apk_build/build.py
