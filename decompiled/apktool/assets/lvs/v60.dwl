@@ -1,39 +1,109 @@
-<?xml version="1.0"?>
-<lv w="7000" h="1800">
+<?xml version="1.0" encoding="utf-8"?><lv w="7000" h="2600">
   <script><![CDATA[function init()
-  gate_1=find "gate_1"
-  color(gate_1,0,0.7,0.3)
-  gate_2=find "gate_2"
-  color(gate_2,0,0.7,0.3)
-end
-function open_gate_1()
-  remove(gate_1,0.1)
-end
-function open_gate_2()
-  remove(gate_2,0.1)
 end]]></script>
-  <!--Original expansion course 60: Last expedition-->
-  <body id="object_001" x="-1601.000" y="-160.000" rotation="0.000" opacity="1" frame="box406" density="0" friction="0.9" restitution="0.1" isSensor="false" isCircle="false" />
-  <body id="object_002" x="-1203.000" y="-160.000" rotation="0.000" opacity="1" frame="box406" density="0" friction="0.9" restitution="0.1" isSensor="false" isCircle="false" />
-  <body id="object_003" x="-809.349" y="-118.626" rotation="12.000" opacity="1" frame="box406" density="0" friction="0.9" restitution="0.1" isSensor="false" isCircle="false" />
-  <body id="object_004" x="-505.197" y="-77.251" rotation="0.000" opacity="1" frame="box227" density="0" friction="0.9" restitution="0.1" isSensor="false" isCircle="false" />
-  <body id="object_005" x="-196.697" y="-77.251" rotation="0.000" opacity="1" frame="box406" density="0" friction="0.9" restitution="0.1" isSensor="false" isCircle="false" />
-  <body id="object_006" x="135.803" y="-61.251" rotation="0.000" opacity="1" frame="box227" density="0" friction="0.9" restitution="0.1" isSensor="false" isCircle="false" />
-  <body id="object_007" x="441.279" y="-95.807" rotation="-10.000" opacity="1" frame="box406" density="0" friction="0.9" restitution="0.1" isSensor="false" isCircle="false" />
-  <body id="object_008" x="746.756" y="-130.363" rotation="0.000" opacity="1" frame="box227" density="0" friction="0.9" restitution="0.1" isSensor="false" isCircle="false" />
-  <body id="object_009" x="1055.256" y="-130.363" rotation="0.000" opacity="1" frame="box406" density="0" friction="0.9" restitution="0.1" isSensor="false" isCircle="false" />
-  <body id="object_010" x="1453.256" y="-130.363" rotation="0.000" opacity="1" frame="box406" density="0" friction="0.9" restitution="0.1" isSensor="false" isCircle="false" />
-  <body id="object_011" x="1851.256" y="-130.363" rotation="0.000" opacity="1" frame="box406" density="0" friction="0.9" restitution="0.1" isSensor="false" isCircle="false" />
-  <wheels id="vehicle" x="-1690.000" y="-217.000" rotation="0.000" opacity="1" />
-  <ball id="cargo" x="-1470.000" y="-208.000" rotation="0.000" opacity="1" />
-  <star id="goal" x="1955.256" y="-162.363" rotation="0.000" opacity="1" />
-  <body id="finish_backstop" x="2025.256" y="-200.363" rotation="90.000" opacity="1" frame="box134" density="0" friction="0.9" restitution="0.1" isSensor="false" isCircle="false" />
-  <body id="gate_1" x="-1083.600" y="-230.000" rotation="90.000" opacity="1" frame="box134" density="0" friction="0.9" restitution="0.1" isSensor="false" isCircle="false" />
-  <switch id="button_1" x="-1362.200" y="-182.000" rotation="0.000" opacity="1" script="open_gate_1" />
-  <body id="object_018" x="-505.197" y="-207.251" rotation="0.000" opacity="1" frame="box227" density="0" friction="0.9" restitution="0.1" isSensor="false" isCircle="false" />
-  <body id="object_019" x="-196.697" y="-124.751" rotation="90.000" opacity="1" frame="box73" density="0.12" friction="0.9" restitution="0.05" isSensor="false" isCircle="false" />
-  <body id="gate_2" x="1174.656" y="-200.363" rotation="90.000" opacity="1" frame="box134" density="0" friction="0.9" restitution="0.1" isSensor="false" isCircle="false" />
-  <switch id="button_2" x="681.056" y="-152.363" rotation="0.000" opacity="1" script="open_gate_2" />
-  <body id="object_022" x="1333.856" y="-138.363" rotation="0.000" opacity="1" frame="circle20" density="0" friction="0.9" restitution="0.1" isSensor="false" isCircle="true" />
-  <body id="object_023" x="1473.156" y="-138.363" rotation="0.000" opacity="1" frame="circle20" density="0" friction="0.9" restitution="0.1" isSensor="false" isCircle="true" />
+  <!--Original expansion course 60: 七层危塔-->
+  <!-- Seven rows from the top: 1, 3, 5, 7, 9, 11, 13 triangular cells.
+       Row n has n upward cells and n-1 inverted cells sharing the same edges.
+       Each upward cell contributes two leaning boards and one horizontal edge.
+       There are 49 cells and 84 distinct boards: no duplicated shared edges.
+       All boards, including the seven bottom-row bases, have density 0.7
+       and remain dynamic, with no hinges, constraints or switches.
+       Finite board widths are included when positioning the leaning contacts.
+       Horizontal edge seams are 2 units; restitution is zero throughout. -->
+  <!-- Row 1: 1 upward and 0 inverted cells (1 total). -->
+  <body id="triangle_r01_c01_left" x="-1071.250000" y="-1634.997450" rotation="-64.426108" opacity="1" frame="box227" density="0.7" friction="1.8" restitution="0" isSensor="false" isCircle="false"/>
+  <body id="triangle_r01_c01_right" x="-958.750000" y="-1634.997450" rotation="64.426108" opacity="1" frame="box227" density="0.7" friction="1.8" restitution="0" isSensor="false" isCircle="false"/>
+  <body id="triangle_r01_c01_base" x="-1015.000000" y="-1521.536108" rotation="0.000000" opacity="1" frame="box227" density="0.7" friction="1.6" restitution="0" isSensor="false" isCircle="false"/>
+  <!-- Row 2: 2 upward and 1 inverted cells (3 total). -->
+  <body id="triangle_r02_c01_left" x="-1183.750000" y="-1408.074766" rotation="-64.426108" opacity="1" frame="box227" density="0.7" friction="1.8" restitution="0" isSensor="false" isCircle="false"/>
+  <body id="triangle_r02_c01_right" x="-1071.250000" y="-1408.074766" rotation="64.426108" opacity="1" frame="box227" density="0.7" friction="1.8" restitution="0" isSensor="false" isCircle="false"/>
+  <body id="triangle_r02_c01_base" x="-1127.500000" y="-1294.613423" rotation="0.000000" opacity="1" frame="box227" density="0.7" friction="1.6" restitution="0" isSensor="false" isCircle="false"/>
+  <body id="triangle_r02_c02_left" x="-958.750000" y="-1408.074766" rotation="-64.426108" opacity="1" frame="box227" density="0.7" friction="1.8" restitution="0" isSensor="false" isCircle="false"/>
+  <body id="triangle_r02_c02_right" x="-846.250000" y="-1408.074766" rotation="64.426108" opacity="1" frame="box227" density="0.7" friction="1.8" restitution="0" isSensor="false" isCircle="false"/>
+  <body id="triangle_r02_c02_base" x="-902.500000" y="-1294.613423" rotation="0.000000" opacity="1" frame="box227" density="0.7" friction="1.6" restitution="0" isSensor="false" isCircle="false"/>
+  <!-- Row 3: 3 upward and 2 inverted cells (5 total). -->
+  <body id="triangle_r03_c01_left" x="-1296.250000" y="-1181.152081" rotation="-64.426108" opacity="1" frame="box227" density="0.7" friction="1.8" restitution="0" isSensor="false" isCircle="false"/>
+  <body id="triangle_r03_c01_right" x="-1183.750000" y="-1181.152081" rotation="64.426108" opacity="1" frame="box227" density="0.7" friction="1.8" restitution="0" isSensor="false" isCircle="false"/>
+  <body id="triangle_r03_c01_base" x="-1240.000000" y="-1067.690739" rotation="0.000000" opacity="1" frame="box227" density="0.7" friction="1.6" restitution="0" isSensor="false" isCircle="false"/>
+  <body id="triangle_r03_c02_left" x="-1071.250000" y="-1181.152081" rotation="-64.426108" opacity="1" frame="box227" density="0.7" friction="1.8" restitution="0" isSensor="false" isCircle="false"/>
+  <body id="triangle_r03_c02_right" x="-958.750000" y="-1181.152081" rotation="64.426108" opacity="1" frame="box227" density="0.7" friction="1.8" restitution="0" isSensor="false" isCircle="false"/>
+  <body id="triangle_r03_c02_base" x="-1015.000000" y="-1067.690739" rotation="0.000000" opacity="1" frame="box227" density="0.7" friction="1.6" restitution="0" isSensor="false" isCircle="false"/>
+  <body id="triangle_r03_c03_left" x="-846.250000" y="-1181.152081" rotation="-64.426108" opacity="1" frame="box227" density="0.7" friction="1.8" restitution="0" isSensor="false" isCircle="false"/>
+  <body id="triangle_r03_c03_right" x="-733.750000" y="-1181.152081" rotation="64.426108" opacity="1" frame="box227" density="0.7" friction="1.8" restitution="0" isSensor="false" isCircle="false"/>
+  <body id="triangle_r03_c03_base" x="-790.000000" y="-1067.690739" rotation="0.000000" opacity="1" frame="box227" density="0.7" friction="1.6" restitution="0" isSensor="false" isCircle="false"/>
+  <!-- Row 4: 4 upward and 3 inverted cells (7 total). -->
+  <body id="triangle_r04_c01_left" x="-1408.750000" y="-954.229396" rotation="-64.426108" opacity="1" frame="box227" density="0.7" friction="1.8" restitution="0" isSensor="false" isCircle="false"/>
+  <body id="triangle_r04_c01_right" x="-1296.250000" y="-954.229396" rotation="64.426108" opacity="1" frame="box227" density="0.7" friction="1.8" restitution="0" isSensor="false" isCircle="false"/>
+  <body id="triangle_r04_c01_base" x="-1352.500000" y="-840.768054" rotation="0.000000" opacity="1" frame="box227" density="0.7" friction="1.6" restitution="0" isSensor="false" isCircle="false"/>
+  <body id="triangle_r04_c02_left" x="-1183.750000" y="-954.229396" rotation="-64.426108" opacity="1" frame="box227" density="0.7" friction="1.8" restitution="0" isSensor="false" isCircle="false"/>
+  <body id="triangle_r04_c02_right" x="-1071.250000" y="-954.229396" rotation="64.426108" opacity="1" frame="box227" density="0.7" friction="1.8" restitution="0" isSensor="false" isCircle="false"/>
+  <body id="triangle_r04_c02_base" x="-1127.500000" y="-840.768054" rotation="0.000000" opacity="1" frame="box227" density="0.7" friction="1.6" restitution="0" isSensor="false" isCircle="false"/>
+  <body id="triangle_r04_c03_left" x="-958.750000" y="-954.229396" rotation="-64.426108" opacity="1" frame="box227" density="0.7" friction="1.8" restitution="0" isSensor="false" isCircle="false"/>
+  <body id="triangle_r04_c03_right" x="-846.250000" y="-954.229396" rotation="64.426108" opacity="1" frame="box227" density="0.7" friction="1.8" restitution="0" isSensor="false" isCircle="false"/>
+  <body id="triangle_r04_c03_base" x="-902.500000" y="-840.768054" rotation="0.000000" opacity="1" frame="box227" density="0.7" friction="1.6" restitution="0" isSensor="false" isCircle="false"/>
+  <body id="triangle_r04_c04_left" x="-733.750000" y="-954.229396" rotation="-64.426108" opacity="1" frame="box227" density="0.7" friction="1.8" restitution="0" isSensor="false" isCircle="false"/>
+  <body id="triangle_r04_c04_right" x="-621.250000" y="-954.229396" rotation="64.426108" opacity="1" frame="box227" density="0.7" friction="1.8" restitution="0" isSensor="false" isCircle="false"/>
+  <body id="triangle_r04_c04_base" x="-677.500000" y="-840.768054" rotation="0.000000" opacity="1" frame="box227" density="0.7" friction="1.6" restitution="0" isSensor="false" isCircle="false"/>
+  <!-- Row 5: 5 upward and 4 inverted cells (9 total). -->
+  <body id="triangle_r05_c01_left" x="-1521.250000" y="-727.306712" rotation="-64.426108" opacity="1" frame="box227" density="0.7" friction="1.8" restitution="0" isSensor="false" isCircle="false"/>
+  <body id="triangle_r05_c01_right" x="-1408.750000" y="-727.306712" rotation="64.426108" opacity="1" frame="box227" density="0.7" friction="1.8" restitution="0" isSensor="false" isCircle="false"/>
+  <body id="triangle_r05_c01_base" x="-1465.000000" y="-613.845369" rotation="0.000000" opacity="1" frame="box227" density="0.7" friction="1.6" restitution="0" isSensor="false" isCircle="false"/>
+  <body id="triangle_r05_c02_left" x="-1296.250000" y="-727.306712" rotation="-64.426108" opacity="1" frame="box227" density="0.7" friction="1.8" restitution="0" isSensor="false" isCircle="false"/>
+  <body id="triangle_r05_c02_right" x="-1183.750000" y="-727.306712" rotation="64.426108" opacity="1" frame="box227" density="0.7" friction="1.8" restitution="0" isSensor="false" isCircle="false"/>
+  <body id="triangle_r05_c02_base" x="-1240.000000" y="-613.845369" rotation="0.000000" opacity="1" frame="box227" density="0.7" friction="1.6" restitution="0" isSensor="false" isCircle="false"/>
+  <body id="triangle_r05_c03_left" x="-1071.250000" y="-727.306712" rotation="-64.426108" opacity="1" frame="box227" density="0.7" friction="1.8" restitution="0" isSensor="false" isCircle="false"/>
+  <body id="triangle_r05_c03_right" x="-958.750000" y="-727.306712" rotation="64.426108" opacity="1" frame="box227" density="0.7" friction="1.8" restitution="0" isSensor="false" isCircle="false"/>
+  <body id="triangle_r05_c03_base" x="-1015.000000" y="-613.845369" rotation="0.000000" opacity="1" frame="box227" density="0.7" friction="1.6" restitution="0" isSensor="false" isCircle="false"/>
+  <body id="triangle_r05_c04_left" x="-846.250000" y="-727.306712" rotation="-64.426108" opacity="1" frame="box227" density="0.7" friction="1.8" restitution="0" isSensor="false" isCircle="false"/>
+  <body id="triangle_r05_c04_right" x="-733.750000" y="-727.306712" rotation="64.426108" opacity="1" frame="box227" density="0.7" friction="1.8" restitution="0" isSensor="false" isCircle="false"/>
+  <body id="triangle_r05_c04_base" x="-790.000000" y="-613.845369" rotation="0.000000" opacity="1" frame="box227" density="0.7" friction="1.6" restitution="0" isSensor="false" isCircle="false"/>
+  <body id="triangle_r05_c05_left" x="-621.250000" y="-727.306712" rotation="-64.426108" opacity="1" frame="box227" density="0.7" friction="1.8" restitution="0" isSensor="false" isCircle="false"/>
+  <body id="triangle_r05_c05_right" x="-508.750000" y="-727.306712" rotation="64.426108" opacity="1" frame="box227" density="0.7" friction="1.8" restitution="0" isSensor="false" isCircle="false"/>
+  <body id="triangle_r05_c05_base" x="-565.000000" y="-613.845369" rotation="0.000000" opacity="1" frame="box227" density="0.7" friction="1.6" restitution="0" isSensor="false" isCircle="false"/>
+  <!-- Row 6: 6 upward and 5 inverted cells (11 total). -->
+  <body id="triangle_r06_c01_left" x="-1633.750000" y="-500.384027" rotation="-64.426108" opacity="1" frame="box227" density="0.7" friction="1.8" restitution="0" isSensor="false" isCircle="false"/>
+  <body id="triangle_r06_c01_right" x="-1521.250000" y="-500.384027" rotation="64.426108" opacity="1" frame="box227" density="0.7" friction="1.8" restitution="0" isSensor="false" isCircle="false"/>
+  <body id="triangle_r06_c01_base" x="-1577.500000" y="-386.922685" rotation="0.000000" opacity="1" frame="box227" density="0.7" friction="1.6" restitution="0" isSensor="false" isCircle="false"/>
+  <body id="triangle_r06_c02_left" x="-1408.750000" y="-500.384027" rotation="-64.426108" opacity="1" frame="box227" density="0.7" friction="1.8" restitution="0" isSensor="false" isCircle="false"/>
+  <body id="triangle_r06_c02_right" x="-1296.250000" y="-500.384027" rotation="64.426108" opacity="1" frame="box227" density="0.7" friction="1.8" restitution="0" isSensor="false" isCircle="false"/>
+  <body id="triangle_r06_c02_base" x="-1352.500000" y="-386.922685" rotation="0.000000" opacity="1" frame="box227" density="0.7" friction="1.6" restitution="0" isSensor="false" isCircle="false"/>
+  <body id="triangle_r06_c03_left" x="-1183.750000" y="-500.384027" rotation="-64.426108" opacity="1" frame="box227" density="0.7" friction="1.8" restitution="0" isSensor="false" isCircle="false"/>
+  <body id="triangle_r06_c03_right" x="-1071.250000" y="-500.384027" rotation="64.426108" opacity="1" frame="box227" density="0.7" friction="1.8" restitution="0" isSensor="false" isCircle="false"/>
+  <body id="triangle_r06_c03_base" x="-1127.500000" y="-386.922685" rotation="0.000000" opacity="1" frame="box227" density="0.7" friction="1.6" restitution="0" isSensor="false" isCircle="false"/>
+  <body id="triangle_r06_c04_left" x="-958.750000" y="-500.384027" rotation="-64.426108" opacity="1" frame="box227" density="0.7" friction="1.8" restitution="0" isSensor="false" isCircle="false"/>
+  <body id="triangle_r06_c04_right" x="-846.250000" y="-500.384027" rotation="64.426108" opacity="1" frame="box227" density="0.7" friction="1.8" restitution="0" isSensor="false" isCircle="false"/>
+  <body id="triangle_r06_c04_base" x="-902.500000" y="-386.922685" rotation="0.000000" opacity="1" frame="box227" density="0.7" friction="1.6" restitution="0" isSensor="false" isCircle="false"/>
+  <body id="triangle_r06_c05_left" x="-733.750000" y="-500.384027" rotation="-64.426108" opacity="1" frame="box227" density="0.7" friction="1.8" restitution="0" isSensor="false" isCircle="false"/>
+  <body id="triangle_r06_c05_right" x="-621.250000" y="-500.384027" rotation="64.426108" opacity="1" frame="box227" density="0.7" friction="1.8" restitution="0" isSensor="false" isCircle="false"/>
+  <body id="triangle_r06_c05_base" x="-677.500000" y="-386.922685" rotation="0.000000" opacity="1" frame="box227" density="0.7" friction="1.6" restitution="0" isSensor="false" isCircle="false"/>
+  <body id="triangle_r06_c06_left" x="-508.750000" y="-500.384027" rotation="-64.426108" opacity="1" frame="box227" density="0.7" friction="1.8" restitution="0" isSensor="false" isCircle="false"/>
+  <body id="triangle_r06_c06_right" x="-396.250000" y="-500.384027" rotation="64.426108" opacity="1" frame="box227" density="0.7" friction="1.8" restitution="0" isSensor="false" isCircle="false"/>
+  <body id="triangle_r06_c06_base" x="-452.500000" y="-386.922685" rotation="0.000000" opacity="1" frame="box227" density="0.7" friction="1.6" restitution="0" isSensor="false" isCircle="false"/>
+  <!-- Row 7: 7 upward and 6 inverted cells (13 total). -->
+  <body id="triangle_r07_c01_left" x="-1746.250000" y="-273.461342" rotation="-64.426108" opacity="1" frame="box227" density="0.7" friction="1.8" restitution="0" isSensor="false" isCircle="false"/>
+  <body id="triangle_r07_c01_right" x="-1633.750000" y="-273.461342" rotation="64.426108" opacity="1" frame="box227" density="0.7" friction="1.8" restitution="0" isSensor="false" isCircle="false"/>
+  <body id="triangle_r07_c01_base" x="-1690.000000" y="-160.000000" rotation="0.000000" opacity="1" frame="box227" density="0" friction="2.0" restitution="0" isSensor="false" isCircle="false"/>
+  <body id="triangle_r07_c02_left" x="-1521.250000" y="-273.461342" rotation="-64.426108" opacity="1" frame="box227" density="0.7" friction="1.8" restitution="0" isSensor="false" isCircle="false"/>
+  <body id="triangle_r07_c02_right" x="-1408.750000" y="-273.461342" rotation="64.426108" opacity="1" frame="box227" density="0.7" friction="1.8" restitution="0" isSensor="false" isCircle="false"/>
+  <body id="triangle_r07_c02_base" x="-1465.000000" y="-160.000000" rotation="0.000000" opacity="1" frame="box227" density="0" friction="2.0" restitution="0" isSensor="false" isCircle="false"/>
+  <body id="triangle_r07_c03_left" x="-1296.250000" y="-273.461342" rotation="-64.426108" opacity="1" frame="box227" density="0.7" friction="1.8" restitution="0" isSensor="false" isCircle="false"/>
+  <body id="triangle_r07_c03_right" x="-1183.750000" y="-273.461342" rotation="64.426108" opacity="1" frame="box227" density="0.7" friction="1.8" restitution="0" isSensor="false" isCircle="false"/>
+  <body id="triangle_r07_c03_base" x="-1240.000000" y="-160.000000" rotation="0.000000" opacity="1" frame="box227" density="0" friction="2.0" restitution="0" isSensor="false" isCircle="false"/>
+  <body id="triangle_r07_c04_left" x="-1071.250000" y="-273.461342" rotation="-64.426108" opacity="1" frame="box227" density="0.7" friction="1.8" restitution="0" isSensor="false" isCircle="false"/>
+  <body id="triangle_r07_c04_right" x="-958.750000" y="-273.461342" rotation="64.426108" opacity="1" frame="box227" density="0.7" friction="1.8" restitution="0" isSensor="false" isCircle="false"/>
+  <body id="triangle_r07_c04_base" x="-1015.000000" y="-160.000000" rotation="0.000000" opacity="1" frame="box227" density="0" friction="2.0" restitution="0" isSensor="false" isCircle="false"/>
+  <body id="triangle_r07_c05_left" x="-846.250000" y="-273.461342" rotation="-64.426108" opacity="1" frame="box227" density="0.7" friction="1.8" restitution="0" isSensor="false" isCircle="false"/>
+  <body id="triangle_r07_c05_right" x="-733.750000" y="-273.461342" rotation="64.426108" opacity="1" frame="box227" density="0.7" friction="1.8" restitution="0" isSensor="false" isCircle="false"/>
+  <body id="triangle_r07_c05_base" x="-790.000000" y="-160.000000" rotation="0.000000" opacity="1" frame="box227" density="0" friction="2.0" restitution="0" isSensor="false" isCircle="false"/>
+  <body id="triangle_r07_c06_left" x="-621.250000" y="-273.461342" rotation="-64.426108" opacity="1" frame="box227" density="0.7" friction="1.8" restitution="0" isSensor="false" isCircle="false"/>
+  <body id="triangle_r07_c06_right" x="-508.750000" y="-273.461342" rotation="64.426108" opacity="1" frame="box227" density="0.7" friction="1.8" restitution="0" isSensor="false" isCircle="false"/>
+  <body id="triangle_r07_c06_base" x="-565.000000" y="-160.000000" rotation="0.000000" opacity="1" frame="box227" density="0" friction="2.0" restitution="0" isSensor="false" isCircle="false"/>
+  <body id="triangle_r07_c07_left" x="-396.250000" y="-273.461342" rotation="-64.426108" opacity="1" frame="box227" density="0.7" friction="1.8" restitution="0" isSensor="false" isCircle="false"/>
+  <body id="triangle_r07_c07_right" x="-283.750000" y="-273.461342" rotation="64.426108" opacity="1" frame="box227" density="0.7" friction="1.8" restitution="0" isSensor="false" isCircle="false"/>
+  <body id="triangle_r07_c07_base" x="-340.000000" y="-160.000000" rotation="0.000000" opacity="1" frame="box227" density="0" friction="2.0" restitution="0" isSensor="false" isCircle="false"/>
+  <!-- Task objects stand inside the bottom cells; the former gates, switches
+       and expedition roads have all been removed. -->
+  <wheels id="vehicle" x="-1126.887" y="-889.769" rotation="0" opacity="1"/>
+  <ball id="cargo" x="-789.448" y="-687.334" rotation="0" opacity="1"/>
+  <star id="goal" x="-448.76" y="-455.457" rotation="0" opacity="1"/>
 </lv>

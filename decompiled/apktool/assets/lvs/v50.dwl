@@ -45,8 +45,8 @@ end]]></script>
   <body id="pebble_4_4" x="493" y="40" frame="circle20" rotation="40" density="5" friction="2.5" restitution="0.02" isSensor="false" isCircle="false" opacity="1"/>
   <body id="pebble_4_5" x="525" y="40" frame="circle20" rotation="53" density="5" friction="2.5" restitution="0.02" isSensor="false" isCircle="false" opacity="1"/>
   <wheels id="vehicle" x="300" y="458" rotation="0" opacity="1"/>
-  <ball id="cargo" x="1080.847" y="362.091" rotation="0" opacity="1"/>
-  <star id="goal" x="1194.784" y="359.667" rotation="0" opacity="1"/>
+  <ball id="cargo" x="1164.656" y="360.28" rotation="0" opacity="1"/>
+  <star id="goal" x="1307.982" y="356.164" rotation="0" opacity="1"/>
   <switch id="release_button" x="395" y="477" rotation="0" opacity="1" script="release_stones"/>
 
   <body id="editor_mvxyo6q6_5" x="847.432" y="499.987" rotation="0" opacity="1" frame="box406" density="0" friction="0.9" restitution="0.3" isSensor="false" isCircle="false"/>

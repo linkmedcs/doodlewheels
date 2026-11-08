@@ -34,10 +34,29 @@ end]]></script>
   <body id="right_c3" x="-13.262" y="-80.547" rotation="0.000" opacity="1" frame="circle20" density="0.2" friction="0.7" restitution="0" isSensor="true" isCircle="false"/>
   <body id="right_link3" x="-36.038" y="-24.175" rotation="-68.000" opacity="1" frame="box87" density="0.2" friction="0.7" restitution="0" isSensor="true" isCircle="false"/>
   <body id="right_c4" x="-58.815" y="32.198" rotation="0.000" opacity="1" frame="circle20" density="0.2" friction="0.7" restitution="0" isSensor="true" isCircle="false"/>
-  <body id="ferry" x="-107.607" y="50.000" rotation="0.000" opacity="1" frame="box227" density="1" friction="1" restitution="0" isSensor="false" isCircle="false"/>
+  <body id="ferry" x="-107.607" y="50.000" rotation="0.000" opacity="1" frame="box227" density="1" friction="2" restitution="0" isSensor="false" isCircle="false"/>
   <body id="finish_road" x="451.000" y="90.000" rotation="0.000" opacity="1" frame="box406" density="0" friction="0.7" restitution="0" isSensor="false" isCircle="false"/>
   <body id="finish_backstop" x="643.368" y="31.272" rotation="90.000" opacity="1" frame="box134" density="0" friction="0.7" restitution="0" isSensor="false" isCircle="false"/>
   <wheels id="vehicle" x="-410.000" y="2.500" rotation="0.000" opacity="1"/>
   <ball id="cargo" x="-260.000" y="9.500" rotation="0.000" opacity="1"/>
   <star id="goal" x="395.000" y="50.000" rotation="0.000" opacity="1"/>
-</lv>
+
+  <!-- Two level-56 curve copies with run-up boards, outside the original platforms.
+       The right copy is mirrored. Original chain, stops and scripts are retained. -->
+  
+  <body id="level47_curve_left_arc_01" x="-870.458" y="165.957" rotation="21.33000" opacity="1" frame="box134" density="0" friction="0.9" restitution="0.1" isSensor="false" isCircle="false"/>
+  <body id="level47_curve_left_arc_02" x="-960.458" y="94.957" rotation="54.21300" opacity="1" frame="box134" density="0" friction="0.9" restitution="0.1" isSensor="false" isCircle="false"/>
+  <body id="level47_curve_left_arc_03" x="-994.458" y="-17.044" rotation="90.40700" opacity="1" frame="box134" density="0" friction="0.9" restitution="0.1" isSensor="false" isCircle="false"/>
+  <body id="level47_curve_left_arc_04" x="-965.457" y="-132.043" rotation="-61.55500" opacity="1" frame="box134" density="0" friction="0.2" restitution="0" isSensor="false" isCircle="false"/>
+  <body id="level47_curve_left_arc_05" x="-886.458" y="-223.043" rotation="-36.22100" opacity="1" frame="box134" density="0" friction="0.3" restitution="0.1" isSensor="false" isCircle="false"/>
+  <body id="level47_curve_right_runup" x="708.213" y="188.171" rotation="0" opacity="1" frame="box227" density="0" friction="0.9" restitution="0.3" isSensor="false" isCircle="false"/>
+  <body id="level47_curve_right_arc_01" x="872.713" y="166.171" rotation="-21.33" opacity="1" frame="box134" density="0" friction="0.9" restitution="0.1" isSensor="false" isCircle="false"/>
+  <body id="level47_curve_right_arc_02" x="962.713" y="95.171" rotation="-54.213" opacity="1" frame="box134" density="0" friction="0.9" restitution="0.1" isSensor="false" isCircle="false"/>
+  
+  
+  
+
+  <body id="editor_mw7fa9o5_1" x="-486.208" y="188.171" rotation="0" opacity="1" frame="box406" density="0" friction="0.9" restitution="0.3" isSensor="false" isCircle="false"/>
+  <body id="editor_mw7fb7jl_2" x="297.936" y="188.171" rotation="0" opacity="1" frame="box406" density="0" friction="0.9" restitution="0.3" isSensor="false" isCircle="false"/>
+  <body id="editor_mw7fb7wj_4" x="-95.219" y="188.171" rotation="0" opacity="1" frame="box406" density="0" friction="0.9" restitution="0.3" isSensor="false" isCircle="false"/>
+  <body id="editor_mw7fiw4g_6" x="-748.579" y="188.171" rotation="0" opacity="1" frame="box134" density="0" friction="0.9" restitution="0.3" isSensor="false" isCircle="false"/></lv>
